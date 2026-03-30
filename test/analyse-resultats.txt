@@ -1,0 +1,3934 @@
+﻿ANALYSE DES COLONNES 'Nom FR' et 'trigramme'
+============================================
+Fichier: C:\Users\amami\GitHub\merge\test\IBIA_ACCMGR_Outil.xlsx
+Onglet: Objets de gestion
+Date: 03/30/2026 22:20:08
+
+STATISTIQUES:
+- Lignes de données: 2047
+- Valeurs totales 'Nom FR': 2047
+- Valeurs uniques 'Nom FR': 2039
+- Valeurs totales 'trigramme': 2046
+- Valeurs uniques 'trigramme': 1946
+
+VALEURS COMMUNES (72):
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - ACM
+  - Age
+  - ALM
+  - APL
+  - BIC
+  - BIP
+  - call
+  - CAM
+  - CCA
+  - CCN
+  - CIC
+  - CIT
+  - CMU
+  - CNC
+  - CVX
+  - DAS2
+  - DEB
+  - DEPRECT
+  - DGS
+  - DVI
+  - EAD
+  - EXTCRT
+  - EXTLNG
+  - FAR
+  - fax
+  - GEC
+  - GED
+  - GRG
+  - GTA
+  - IFRS
+  - INTBAD
+  - ISO
+  - Job
+  - LGD
+  - LOB
+  - MCC
+  - MOA
+  - MOE
+  - MULCOR
+  - MULPHA
+  - N-1
+  - NAF
+  - net
+  - NIC
+  - NIR
+  - OPC
+  - PD
+  - procom
+  - QUI
+  - REC
+  - RECNAS
+  - RIV
+  - SAS
+  - SMS
+  - SOS
+  - TADSDEC
+  - TADSECD
+  - TADSECH
+  - TL1
+  - TL4
+  - URL
+  - VIP
+  - websin
+
+
+UNIQUEMENT dans 'Nom FR' (1967):
+  - "a l'autorité parentale"
+  - "a le pouvoir bancaire"
+  - "a une entreprise individuelle"
+  - "appartient au foyer fiscal"
+  - "bénéficiaire effectif"
+  - "Centre Est Europe"
+  - 2nd meilleur
+  - 36 derniers mois
+  - à payer
+  - abonné
+  - absence
+  - ACAM
+  - accès
+  - accès confidentiel
+  - accident
+  - accident de circulation
+  - accord de gestion
+  - accouchement
+  - ACEM
+  - ACEM réalisée
+  - achat
+  - acheminement
+  - ACORES
+  - acquisition
+  - acte CCAM
+  - acte de prévention
+  - acte de soins santé de la CPAM
+  - acte de soins santé des ACM
+  - Acte fondateur
+  - acteur
+  - acteur en assurance
+  - acteur santé
+  - actif
+  - actif supprimable
+  - action
+  - action du contentieux
+  - action suivante
+  - actionnaire
+  - activité
+  - activité à mi-temps
+  - activité à temps partiel
+  - activité à temps partiel thérapeutique
+  - actuaire
+  - actuel
+  - adaptation verres
+  - ADELI
+  - adhérent
+  - adhérer
+  - adhésion
+  - adhésion obligatoire
+  - adhésion PCM
+  - administrateur
+  - administrateur mot de passe
+  - ADRE
+  - adresse
+  - adresse courrier
+  - Adresse ligne 1
+  - Adresse ligne 2
+  - Adresse ligne 3
+  - Adresse ligne 4
+  - Adresse ligne 5
+  - Adresse ligne 6
+  - Adresse ligne 7
+  - Adresse mail
+  - affaire
+  - affectation
+  - affecté
+  - affecter le SARA
+  - affection
+  - affichage
+  - âge du tiers titulaire
+  - agence
+  - agrégation
+  - agregation des mouvements financiers
+  - agrégé
+  - agrément
+  - agrément vitrage
+  - ajustement
+  - ajustement tarifaire
+  - alcoolémie controlée
+  - alias
+  - alphacote
+  - alphanumérique
+  - amortissement
+  - ancien
+  - ancien BBAN
+  - ancienneté
+  - ancienneté courante
+  - année
+  - Année d'acquisition
+  - année de rétention
+  - Année de survenance
+  - année glissante
+  - année mois jours
+  - année précédente
+  - année suivante
+  - AnnéeMois
+  - annuel
+  - annulation
+  - annulé
+  - anomalie
+  - antécédants médicaux
+  - anticipation
+  - anticiper
+  - APEN
+  - APET
+  - appel des cotisations
+  - application
+  - application de stockage
+  - Application informatique
+  - application origine
+  - application source
+  - appliqué
+  - après chargement
+  - après CRM
+  - après CRM légal
+  - après-midi
+  - ARBO R
+  - archivage
+  - archivage automatique
+  - arrêt
+  - arrêt de travail
+  - arrêté comptable
+  - assemblée générale
+  - association
+  - assujettissement à la TVA
+  - assurance courue
+  - assurance de base
+  - assurance divers
+  - assurances
+  - assuré Santé Sinistré
+  - assuré sinistré
+  - assurée
+  - assureur
+  - attestation de santé
+  - Attribut
+  - ATUAPI
+  - ATUPRV
+  - audioprothèse
+  - augmentation
+  - automate
+  - autorisation
+  - autorisé
+  - autre commission
+  - autre complémentaire
+  - autre garantie
+  - autre garantie tarifaire
+  - autres types
+  - avance
+  - avantage
+  - avantage contrat
+  - avantage mois gratuit
+  - avantage sans campagne commerciale
+  - avantage Temps Fort
+  - avantages FONDO/ACORES
+  - avenant Contrat collectif
+  - avenant du contrat
+  - avenant du contrat S18
+  - avenant du contrat Santé
+  - Axe
+  - ayant résolu
+  - ayant saisi
+  - ayant-droit
+  - bagage
+  - bague
+  - BAL interne
+  - BALAMD
+  - balance
+  - balance tout axe
+  - Banesto
+  - banque
+  - banque à distance
+  - banque de France
+  - banque Interco
+  - bareme
+  - barème de taux
+  - barème de terme
+  - barème général
+  - bareme groupe
+  - barème santé
+  - barème tarification
+  - barreau de compétence
+  - bascule de CAM vers GEC
+  - base
+  - base de règlement
+  - base organisme
+  - Batch
+  - bâtiment
+  - BBAN
+  - BBAN de prélèvement
+  - BCE
+  - bénéficiaire
+  - bénéficiaire couvert
+  - bénéficiaire du décompte
+  - bénéficiaire du règlement
+  - bénéficiaire du règlement prévoyance
+  - bénéficiaire en assurance santé
+  - bien immobilier
+  - bilan résultat CTA
+  - bloc
+  - bloc note
+  - bonus optique
+  - booléen
+  - bordereau comptable
+  - Bornes date
+  - branche assurance
+  - branche d'activité
+  - Branche IDW
+  - Bucket
+  - bug informatique
+  - bureau
+  - Bureau du guichet
+  - cadre fiscal
+  - Calcul de la dette
+  - Calcul de la prime acquise
+  - Calcul de la prime future
+  - calcul de la résiliation
+  - Calcul de l'échéance
+  - Calcul des provisions
+  - calculé
+  - calendrier
+  - Campagne commerciale
+  - campagne d'avantage
+  - Campagne mois gratuit
+  - canal
+  - canal de communication
+  - canal de distribution
+  - canal de sortie
+  - canal d'entrée
+  - canal utilisé
+  - canton suisse
+  - capacité juridique
+  - capital décès
+  - capital garanti
+  - capital restant dû
+  - caractéristiques
+  - caractéristiques du correspondant
+  - carburant
+  - carence locative
+  - Carte avance santé
+  - carte BIP
+  - carte étudiante
+  - Carte verte
+  - casse lentilles
+  - casse montures
+  - casse verres
+  - Catalogue commercial
+  - catalogue de courriers
+  - catégorie
+  - catégorie de conception
+  - Catégorie de l'activité
+  - Catégorie juridique
+  - Catégorie Professionnelle
+  - catégorie salariale
+  - catégorie socio-professionnelle
+  - cause de la prestation
+  - cause du sinistre
+  - CBFA
+  - CDG FA réassurance 1
+  - CDG FA réassurance 2
+  - central
+  - centre d'expertise
+  - certificat fiscal
+  - certification
+  - change
+  - change en devise
+  - chargé de clientèle
+  - chargement
+  - charges immobilier
+  - chèque
+  - chiffre d'affaire
+  - choisi
+  - choix manuel par défaut
+  - cible
+  - CIF NIF
+  - circonstance
+  - civilité
+  - classe
+  - classement
+  - classement maitre
+  - classement sans suite
+  - classification
+  - classification marge RT CTA
+  - classification MIF
+  - classification RT CTA
+  - clé
+  - clé 1
+  - clé 2
+  - clé 3
+  - clé 4
+  - clé 5
+  - clé 6
+  - clé de référencement
+  - clé de regroupement
+  - client
+  - clientèle
+  - clos
+  - clôture comptable
+  - CNIT
+  - code
+  - code d'accès
+  - Code émetteur
+  - code indicatif
+  - Code MCC
+  - code métier
+  - code SAS
+  - code section
+  - CODIQUE
+  - Coefficient
+  - coefficient multiplicateur
+  - COFIDIS
+  - collaborateur
+  - collaborateur hiérarchie
+  - collaborateurs assurance
+  - Colonne
+  - colonne source
+  - commande
+  - Commentaire
+  - Commercant
+  - commercialisation
+  - commission
+  - commission à échéance
+  - commission appliquée
+  - commission calculée
+  - commission d'apport
+  - commission de gestion
+  - commission externe
+  - commission initiale
+  - commission interne
+  - commission sur tarif appliqué
+  - commissionable
+  - commissionnement
+  - Communauté
+  - Communauté SAS
+  - commune
+  - Commune de résidence
+  - communication confidentielle
+  - communication externe
+  - communication interne
+  - communication liée
+  - compagnie de remplacement
+  - Compétence
+  - Complément d'adresse
+  - Complément de localisation
+  - complément d'information
+  - complémentaire
+  - complémentaire santé
+  - complet
+  - comptabilisation
+  - comptabilité
+  - comptabilité assurance
+  - comptabilité CNC autorisée
+  - comptabilité IFRS autorisée
+  - comptable
+  - Comptage SID
+  - Comptage SIO/SID
+  - compte
+  - compte auxiliaire
+  - compte bancaire
+  - compte comptable
+  - compte dédié interco
+  - compte général
+  - compte HIP
+  - compte rapproché
+  - compte taxable
+  - comptes et habilitations des collaborateurs
+  - compteur de ressources
+  - compteur GPO
+  - compteur plafond
+  - compteur profils rédacteur
+  - concaténation des identifiants de taxe
+  - concaténation des identifiants des messages
+  - concaténation des références d'ajustement
+  - concession ou marque automobile
+  - Condition
+  - condition de règlement
+  - Condition de règlement utilisée
+  - condition logement
+  - condition particulière
+  - conditions et moyens de paiement
+  - conducteur
+  - confidentialité
+  - congés longue durée
+  - conjoint
+  - conjoint marié
+  - conjoint pacsé
+  - connaissance
+  - connexion
+  - Console du gestionnaire
+  - consolidation
+  - consolidation bilan résultat
+  - consolidé
+  - consommation d'avantage
+  - consommation d'avantage agrégés
+  - consommation d'avantage détaillés
+  - construction
+  - contact
+  - contentieux
+  - contexte comptable
+  - contractuel
+  - contrat
+  - contrat annulé
+  - contrat CAS
+  - contrat chapeau
+  - contrat cible
+  - contrat collectif
+  - contrat collectif épargne
+  - contrat collectif prévoyance
+  - contrat collectif retraite
+  - contrat collectif santé
+  - contrat complémentaire
+  - contrat d'assurance
+  - contrat de travail
+  - Contrat effet futur
+  - contrat entreprise
+  - contrat groupe
+  - Contrat Migré
+  - Contrat multi titulaires
+  - Contrat Payant
+  - Contrat PCM
+  - contrat précédent
+  - contrat prévoyance
+  - Contrat Remplaçant
+  - Contrat Remplacé
+  - contrat résilié
+  - Contrat S18
+  - Contrat Santé
+  - Contrat Source
+  - contrepartie
+  - Contrôle
+  - contrôle d'alcoolémie
+  - contrôle de processus
+  - contrôle de stupéfiant
+  - Contrôle double
+  - Contrôler
+  - convention
+  - convention collective applicable
+  - convention honoraire
+  - conversion
+  - Coordonnée X
+  - Coordonnée Y
+  - coque
+  - Correspondant
+  - Correspondant ADELI
+  - correspondant en relation
+  - correspondant extérieur
+  - Correspondant GECOR
+  - corrigé
+  - Corse
+  - cotation
+  - cotisation
+  - cotisation annuelle TTC
+  - cotisation de référence
+  - cotisation global brut
+  - cotisation global brut calculé
+  - cotisation légale
+  - cotisations
+  - cotisaton à appliquer
+  - Coupons
+  - Coupons couru
+  - courant
+  - courrier
+  - cours
+  - cours actuel
+  - Cours change
+  - cours d'achat
+  - cours d'achat calculé
+  - cours de référence
+  - cours de vente
+  - court terme
+  - courtier
+  - Cout
+  - coût de police
+  - couverture
+  - Couverture assurance
+  - couverture de risque
+  - CPAM
+  - créateur
+  - Créateur de l'événement de la dette
+  - création
+  - crédit
+  - crédit d'impot
+  - Crédit Mutuel
+  - Critère
+  - CRM
+  - crypté
+  - culture application
+  - cybermut
+  - cycle de vie
+  - cycle de vie actif
+  - cylindrée
+  - DARVA
+  - Date
+  - Date comptable
+  - date concidérée
+  - Date d'achat
+  - Date d'annulation
+  - Date d'archivage
+  - Date d'arreté
+  - Date d'arrêté
+  - Date d'association
+  - Date de blocage
+  - Date de changement
+  - Date de chargement
+  - Date de clôture
+  - Date de consultation
+  - Date de contentieux
+  - Date de création
+  - Date de déblocage
+  - Date de début
+  - Date de début dans l'entrepot
+  - Date de début de l'identifiant unique
+  - Date de début de validité
+  - Date de décès
+  - Date de déclaration
+  - Date de dissolution
+  - Date de fin
+  - Date de fin dans l'entrepot
+  - Date de fin de l'identifiant unique
+  - Date de fin de validité
+  - Date de liaison
+  - Date de liquidation
+  - Date de mise à jour
+  - Date de naissance
+  - Date de positionnement
+  - Date de prise en charge
+  - Date de prorogation
+  - Date de rappel
+  - date de rattachement
+  - Date de réception
+  - Date de référence
+  - Date de résiliation
+  - Date de résolution
+  - Date de retour
+  - Date de révision
+  - Date de saisie
+  - Date de sortie
+  - Date de souscription
+  - Date de survenance
+  - Date de suspension
+  - Date de traitement
+  - date de valorisation
+  - Date d'échéance
+  - Date d'édition
+  - Date d'effet
+  - Date d'embauche
+  - Date d'entrée
+  - Date d'exécution
+  - Date d'extraction
+  - Date d'imputation
+  - Date d'insertion
+  - Date d'intégration
+  - Date d'inventaire
+  - Date echeance
+  - Date Julienne
+  - Date limite
+  - date ouverture prélèvement
+  - Date prévue de début
+  - Date prévue de fin
+  - Date quantième
+  - Date réelle de début
+  - Date réelle de fin
+  - Date système
+  - Date utilisée
+  - débit
+  - débosselage sans peinture
+  - début
+  - début de période
+  - décès
+  - décès accidentel
+  - décimal
+  - décision
+  - déclaration
+  - Déclaré
+  - décompte au contrôle
+  - décompte santé
+  - décompte santé lié
+  - décote
+  - découvert
+  - décret
+  - défaut
+  - Définition
+  - définitive
+  - dégressivité
+  - Délai
+  - délai de carence
+  - délai de paiement
+  - Demande
+  - Demande liée
+  - demandeur
+  - Demi heure
+  - Demi-journée
+  - dent
+  - dépannage gratuit
+  - départ à la retraite
+  - Département
+  - Dépassement assurance
+  - dépassement de messages
+  - dépassement du forfait
+  - dépositaire
+  - dépôt
+  - Dépréciation
+  - dernier
+  - Dernier contrat
+  - dernier crédit
+  - Dernier état
+  - Dernier événement de la dette
+  - Dernier numéro
+  - Dernière date
+  - Dernière échéance
+  - dernière image
+  - Derniere image de l'identifiant unique
+  - dernière mise à jour
+  - dernière modification
+  - Dernière opération
+  - Dernière opération effectuée
+  - Dernière pièce
+  - dernière prolongation
+  - dernière reception
+  - dernière réception
+  - dernière saisie
+  - dernière utilisation
+  - dérogation
+  - Description
+  - desk
+  - Destinataire de la dette
+  - Destinataire du règlement
+  - destination analytique
+  - destination du règlement
+  - détachement
+  - détail
+  - détaillé
+  - détention des actions
+  - Dette
+  - Dette équilibre
+  - dette transférée
+  - devis
+  - devise
+  - devise choisi
+  - devise consolidée
+  - Devise de conso
+  - devise de gestion
+  - devise d'origine
+  - devise du montant
+  - Devise du portefeuille
+  - devise étrangère
+  - Devise négociée
+  - devise règlement
+  - devise valeur
+  - DGA
+  - différé
+  - Différence
+  - dimanche
+  - direction régionale
+  - discriminant
+  - disponible
+  - Distance
+  - distribution
+  - divers
+  - document
+  - document de base
+  - domaine
+  - domaine assurance
+  - domaine fonctionnel
+  - domicile
+  - domiciliation bancaire
+  - donnée
+  - donnée SID
+  - donnée SIO
+  - Données
+  - données personnelles
+  - données spéciales
+  - donneur d'ordre
+  - dossier
+  - dossier sinistre
+  - dossiers graves
+  - Dotation
+  - Double règlement
+  - Droit
+  - DSN
+  - durée
+  - échange CPAM
+  - échéance
+  - échéance démarrant
+  - échéance différée
+  - échéance du contentieux
+  - Échéance du contrat
+  - échéance exigible
+  - échéance impayée
+  - échéance principale
+  - échéance rejetée
+  - échéancier
+  - échéancier automatique
+  - economique
+  - éditeur
+  - edition
+  - édition autorisée
+  - édition courrier
+  - Edition effective
+  - effectif
+  - Effectuer
+  - effet
+  - élément
+  - éligibilité
+  - éligibilité BATCH
+  - embarcation
+  - embarcation modifiée
+  - émetteur
+  - émetteur d'origine
+  - émission
+  - emplacement
+  - employé
+  - employé de la DSN
+  - employeur
+  - emprunteur
+  - Encaissé
+  - Encaissement
+  - enfant
+  - enfant à charge
+  - enregistré
+  - enregistrement
+  - Enseigne commerciale
+  - Enseigne commerciale audio
+  - Enseigne commerciale optique
+  - enseigne entreprise individuelle
+  - ensemble
+  - en-tête
+  - entité
+  - Entité centralisatrice des tiers
+  - Entité gestionnaire
+  - entité propriétaire de l'objet
+  - entrée
+  - entrée sortie
+  - entreprise
+  - entreprise individuelle
+  - enveloppe d'avantage
+  - environnement
+  - environnement informatique
+  - envoi
+  - envoi multiple
+  - équipe
+  - Equipe assurance
+  - Equipe cible
+  - équipe demandeuse
+  - Equipe émettrice
+  - Equipe gestionnaire
+  - équipe MOE
+  - ER
+  - ERMES
+  - erreur
+  - estime
+  - estimé
+  - établissement
+  - établissement de la DSN
+  - établissement de santé
+  - établissement juridique
+  - établissement Maître
+  - établissement public hospitalier
+  - étage
+  - Etape de la demande
+  - Etat
+  - état
+  - état de la tournée
+  - état de l'enveloppe
+  - état liaison contrat sinistre
+  - état SID
+  - état SIO
+  - Etiquette
+  - événement
+  - événement de la dette
+  - événement déclencheur
+  - événement en attente
+  - événement identique
+  - événement rattaché de la dette
+  - événements LSRH des employés
+  - exclure
+  - exclusion du renouvellement
+  - Exécutant des soins
+  - exécution
+  - exercice comptable
+  - exonération cotisation
+  - exonération taxe
+  - expert concerné
+  - expertise à distance
+  - exploitant agricole
+  - exportation
+  - Expression
+  - EXTASE
+  - extension grande plaisance eaux intérieures
+  - extension hauturière
+  - externe
+  - extinction
+  - EXTOURNE
+  - extraction
+  - facturation
+  - facture
+  - famille
+  - famille assurance
+  - famille identifiant
+  - famille juridique
+  - famille produit
+  - Fédération
+  - fédération de rattachement
+  - Fichier
+  - fin
+  - fin de période
+  - financier
+  - FINESS
+  - Fiscal
+  - FITCH
+  - Fixing
+  - Fixing date
+  - flux
+  - Flux à l'origine de la demande
+  - flux de devis
+  - Flux d'origine
+  - fond de page
+  - fondation
+  - FONDO
+  - forçage
+  - forcé
+  - forfait réparateur BDG
+  - forfait véhicule de remplacement
+  - forfait VEI
+  - formalités médicales
+  - Format
+  - Format d'origine
+  - forme de la valeur
+  - Formule
+  - Formule de la version commerciale
+  - fortement utilisé
+  - FP existing
+  - fractionnement
+  - frais
+  - frais de déplacement
+  - frais de souscription
+  - frais déplacement max
+  - frais experts
+  - frais généraux
+  - frais inclus
+  - frais OTE
+  - frais réels
+  - France
+  - franchise
+  - franchise de dépassement
+  - franchise de frais
+  - franchise de malus
+  - franchise garantie dommage maxi
+  - franchise garantie dommage mini
+  - franchise maladie
+  - fraude
+  - garanti
+  - garantie
+  - garantie accident
+  - garantie capital
+  - garantie Décès
+  - garantie déclenchant une rente
+  - garantie divers IARD
+  - garantie divers Vie
+  - garantie ERMES
+  - garantie IARD
+  - garantie incapacité de travail
+  - Garantie souscrite
+  - garantie vie
+  - garanties et services
+  - garanties non soumises au CRM
+  - gardiennage véhicule
+  - GECOR
+  - génération
+  - génération de produit
+  - générique
+  - GENIMP
+  - genre
+  - géocodage Lambert 2
+  - géographique
+  - gérant
+  - géré
+  - Gestion
+  - gestion ADM
+  - gestion AUD
+  - gestion GPS
+  - gestionnaire
+  - gestionnaire du contrat
+  - global
+  - GPS associé existant
+  - grade
+  - gratuité
+  - GRG propriétaire de l'objet
+  - groupe
+  - groupé
+  - groupe assurance santé
+  - Groupe Crédit Mutuel
+  - groupe de clients
+  - groupe de contrôles
+  - groupe de distribution
+  - groupe dépositaire
+  - Groupe EQU
+  - Groupe informatique
+  - groupe sinistre
+  - Groupe TRIBU
+  - groupement
+  - GRP affecté
+  - guichet
+  - Guichet  Maître de l'établissement
+  - Guichet de l'établissement
+  - guichet de rattachement
+  - guichet tiers centralisateur
+  - habilitation
+  - hedge
+  - Heure
+  - Heure de création
+  - Heure de début
+  - Heure de début de l'identifiant unique
+  - Heure de début de validité
+  - Heure de fin
+  - Heure de fin de l'identifiant unique
+  - Heure de fin de validité
+  - Heure de mise à jour
+  - Heure de saisie
+  - Heure de souscription
+  - Heure d'effet
+  - historique
+  - honoraire
+  - honoraire conventionné
+  - honoraires expert
+  - Horaire
+  - Horodatage
+  - Horodatage d'annulation
+  - Horodatage de création
+  - Horodatage de début
+  - Horodatage de début de l'identifiant unique
+  - Horodatage de début de validité
+  - Horodatage de déclaration
+  - Horodatage de fin
+  - Horodatage de fin de l'identifiant unique
+  - Horodatage de fin de validité
+  - Horodatage de génération
+  - Horodatage de lecture
+  - Horodatage de liaison
+  - Horodatage de licenciement
+  - Horodatage de mise à jour
+  - Horodatage de prochain traitement
+  - Horodatage de publication
+  - Horodatage de référence
+  - Horodatage de révision
+  - Horodatage de solde
+  - Horodatage de suppression
+  - Horodatage de survenance
+  - Horodatage de validation
+  - Horodatage d'échéance
+  - Horodatage d'exécution
+  - Horodatage d'insertion
+  - Horodatage technique
+  - hospitalisation
+  - IASIMP
+  - IBAN
+  - Identifiant
+  - Identifiant d'Entité Légale (LEI)
+  - identifiant du message
+  - identifiant du montant
+  - identifiant fonctionnel
+  - Identifiant technique
+  - Identifiant unique
+  - identification nationale
+  - identification SRA
+  - Ile de France
+  - image contrat assurance
+  - immatriculation
+  - immergé
+  - impayé
+  - impayés
+  - importance
+  - imputation
+  - indemnisation
+  - indemnité de retard
+  - indemnité journalière
+  - index
+  - index du SID
+  - index du SIO
+  - indicateur
+  - indicatif
+  - indice
+  - indice à la souscription
+  - indisponibilité
+  - inflation
+  - information liée
+  - INFORMEX
+  - infraction
+  - initial
+  - injonction
+  - INSEE
+  - INSEE de rattachement
+  - instruction
+  - intégration
+  - intéraction
+  - intéraction liée
+  - intérêt
+  - intérêt à déclarer
+  - intérêt couru
+  - intérêt remboursé
+  - interlocuteur privilégié
+  - intermédiaire
+  - intermédiaire de gestion
+  - international
+  - interne
+  - intervention
+  - Intervention chirurgicale
+  - invalidité permanente partielle
+  - invariant
+  - inventaire
+  - inversée
+  - IRIS
+  - IRPF
+  - ISIN
+  - issu du barème
+  - issu d'une operation
+  - IVA/IGIC
+  - jeudi
+  - jeudi après-midi
+  - jeudi matin
+  - Jour
+  - jour de couverture
+  - Jour férié
+  - jour indemnisé
+  - jour ouvrable
+  - jour ouvré
+  - Jour précédent
+  - Jour suivant
+  - Journal
+  - Jours restant
+  - Julienne
+  - justificatif
+  - kilométrage au compteur
+  - kilomètre
+  - kilomètre gratuit
+  - kilomètre illimité
+  - langue
+  - langue d'utilisation
+  - largeur
+  - latente
+  - Latitude
+  - légal
+  - Level 1
+  - Level 2
+  - Level 3
+  - Level 4
+  - Libellé
+  - Libellé court
+  - Libellé de la date
+  - Libellé de la durée
+  - Libellé du montant
+  - Libellé du nombre
+  - Libellé long
+  - lié
+  - Lien
+  - lien commercial
+  - Lien contrat
+  - lien d'archivage
+  - lien entre contrôles
+  - lien majoration
+  - lien site web
+  - lieu de stockage
+  - lieu d'édition
+  - ligne
+  - ligne 1
+  - ligne 2
+  - ligne 3
+  - ligne de soins
+  - ligne détail
+  - limite
+  - limite de calcul
+  - limite de la règle de calcul
+  - liquidation
+  - Liste
+  - LISTRS
+  - local
+  - localisation
+  - localisation géographique
+  - Localité
+  - logiciel de paie
+  - logique
+  - Loi madelin
+  - long terme
+  - Longitude
+  - longueur
+  - lot
+  - lundi
+  - lundi après-midi
+  - lundi matin
+  - macro
+  - mail
+  - main d'œuvre
+  - main d'œuvre hors taxe
+  - maintien
+  - maitre
+  - majoration
+  - majoration dentaire
+  - manager
+  - manuelle
+  - marché
+  - mardi
+  - mardi après-midi
+  - mardi matin
+  - marge comptable
+  - marge contrôle de gestion
+  - Mariage avance santé
+  - marque
+  - masquage
+  - matériaux de construction
+  - matin
+  - Matricule
+  - matricule RH
+  - maximum
+  - mécanique toute marque
+  - médecin référent
+  - membre d'association
+  - mensuel
+  - mercredi
+  - mercredi après-midi
+  - mercredi matin
+  - message
+  - Message 1
+  - Message 2
+  - message de contrôle
+  - message de la ligne de soins
+  - message de retour
+  - message du décompte santé
+  - messages génériques
+  - mesure
+  - métier
+  - migré
+  - minimum
+  - Minute
+  - mise à jour
+  - mise en attente
+  - mise en conformité
+  - mise en demeure
+  - Mise en jeu
+  - mise en place
+  - modalité de la permanence
+  - mode
+  - mode de calcul
+  - mode de connexion
+  - mode de contact
+  - mode de création
+  - mode de déclaration
+  - mode de fractionnement
+  - Mode de gestion
+  - Mode de récupération de la dette
+  - mode de règlement
+  - mode d'encaissement
+  - Mode d'inscription
+  - modèle
+  - modèle de contrôle
+  - modèle de courriers
+  - modèle d'entreprise
+  - modification
+  - modification de l'actionnariat
+  - modification d'une dette
+  - modification faite par un particulier
+  - modification intrajournalière
+  - modification post fusion
+  - modifié
+  - module actuarial
+  - moins-values
+  - mois
+  - mois d'assurances
+  - mois de naissance
+  - Mois d'effet
+  - Mois gratuit
+  - mois précédent
+  - mois suivant
+  - monde
+  - Mondial Assistance
+  - monétique
+  - montant
+  - Montant agrégé
+  - montant autorisé
+  - Montant brut
+  - Montant cumulé
+  - Montant global
+  - Montant HT
+  - Montant Maximum
+  - Montant Minimum
+  - Montant net
+  - montant PDD
+  - Montant remboursé en assurance santé
+  - Montant TNR
+  - Montant total
+  - Montant TTC
+  - mood
+  - mot clé
+  - moteur
+  - moteur indoor
+  - motif
+  - motif actif
+  - motif complémentaire
+  - motif d'accord
+  - motif d'arrêt
+  - motif de fin de contrat
+  - motif de reprise
+  - motif de situation
+  - motif de sortie
+  - motif de suspension
+  - motif d'éligibilité
+  - motif du retour
+  - motif précédent
+  - mouvement
+  - mouvement bancaire marié
+  - Mouvement CAS
+  - mouvement financier
+  - Mouvements créditeurs
+  - Mouvements débiteurs
+  - moyen
+  - Multidétention
+  - multiple contrat CAS
+  - Mutualise contrat reel
+  - NACE
+  - naissance
+  - Nationalité
+  - Nature
+  - Nature de la dette
+  - Nature de l'offre
+  - nature de l'opération
+  - nature du produit
+  - nature économique
+  - nature juridique
+  - nature légale
+  - négotiation
+  - niveau
+  - niveau de l'association
+  - NOEMIE
+  - nœud
+  - nœud Vertica
+  - Nom
+  - nombre
+  - nominal
+  - non référencé
+  - norme
+  - Notation
+  - notifié
+  - NPAI
+  - numéro
+  - Numéro Identifiant National
+  - Objectif
+  - Objectif atteint
+  - objet
+  - objet assuré
+  - objet risqué
+  - objet sinistré
+  - obligatoire
+  - OBNL
+  - observation
+  - occurrence
+  - offre
+  - offre classique
+  - offre couronne dentaire
+  - offre implant dentaire
+  - offre intégrale dentaire
+  - offre salarié
+  - opération
+  - opération effectuée
+  - opération financière
+  - opération saisie
+  - opérations bancaires agrégées
+  - opposition
+  - option
+  - option côtière
+  - option de coordination
+  - option eaux intérieures
+  - option fiscale
+  - option rente garantie
+  - optique solidaire
+  - ordinateur
+  - Ordre
+  - ordre de préférence
+  - organigramme
+  - organisme propriétaire
+  - organisme SAS
+  - ORIAS
+  - origine
+  - origine de la numérisation
+  - orpheline
+  - pack insécable
+  - package
+  - PACS
+  - padé
+  - pages
+  - paiement
+  - Panier
+  - panier de soins
+  - parité
+  - parité de change
+  - parrainage
+  - part Comité d'entreprise
+  - part employeur
+  - part salariale
+  - partenaire
+  - participation aux bénéfices
+  - participation employeur
+  - particularité
+  - partie
+  - parution
+  - patronymique
+  - pavillon
+  - pays
+  - pays de cotation
+  - pays de naissance
+  - pays de présentation
+  - pays de résidence
+  - Pays des soins
+  - pays d'obtention du permis de conduire
+  - pays ISO
+  - peinture nacrée
+  - peinture opaque
+  - peinture vernie
+  - perçus
+  - Périmètre de Couverture
+  - périmètre géographique
+  - période
+  - Période calendaire
+  - période calendaire précédente
+  - période calendaire suivante
+  - période de chômage
+  - Période de couverture
+  - période de lancement
+  - période d'indémnisation
+  - période d'invalidité
+  - période liée
+  - périodicité
+  - permanence
+  - permis de conduire
+  - PERSOID
+  - PERSOID à informer
+  - personne
+  - personne à charge
+  - personne décédée
+  - personne morale
+  - personne physique
+  - personne sinistrée
+  - perte
+  - perte de points
+  - physique
+  - pièce
+  - Pilotage
+  - pilotage financier
+  - Pivot Métier
+  - place
+  - plafond
+  - plafond SAS
+  - Plage de distribution
+  - plan de compte
+  - planification du contrôle
+  - pli non distribuable
+  - plus moins-values
+  - Plus moins-values latente
+  - plus moins-values réalisé
+  - plus-values
+  - poids
+  - point de contact
+  - police
+  - police mère
+  - port d'attache
+  - portabilité
+  - portail bureau par défaut
+  - Portée de l'objectif
+  - portefeuille
+  - Position
+  - possession
+  - postal
+  - poste
+  - Pourcentage
+  - PPFX_ABR
+  - PPFX_AMP_FIL
+  - PPFX_AMZ_IVY
+  - PPFX_API_FIL
+  - PPFX_FNCTXN
+  - PPFX_FNCTXN_DAR
+  - PPFX_GMP_FIL
+  - PPFX_LAM_FIL
+  - PPFX_LIR_FIL
+  - PPFX_PF2_FIL
+  - PPFX_PTF_CHT
+  - PPFX_PTF_IVY
+  - PPFX_TUP_FIL
+  - PPFX_XMT_RNG
+  - précédant
+  - précédent appel des cotisations
+  - Précision De Couverture
+  - prédécesseur
+  - préférentiel
+  - Préfixe
+  - prélèvement
+  - prélèvement fiscal
+  - Prélèvement Forfaitaire Libératoire (PFL)
+  - premier arrêt de travail
+  - premier contrat
+  - premier jour
+  - première
+  - première affectation
+  - Première date
+  - première entrée
+  - première mise en circulation
+  - première réception
+  - première utilisation
+  - Prénom
+  - Prescripteur des soins
+  - présence
+  - présence chauffeur
+  - presence du tiers
+  - présentation
+  - Prestataire
+  - prestation
+  - prestation ASSEDIC
+  - prestation origine
+  - prestation précédante
+  - prestation prévoyance
+  - Prestation Santé
+  - prêt
+  - prêt immédiat
+  - Prévention bien-être collectif
+  - Prévention bien-être individuel
+  - prévisionnelle
+  - prévoyance
+  - prime
+  - prime acquise
+  - prime émise
+  - prime émise non acquise
+  - prime encaissée
+  - prime future
+  - prime théorique de référence
+  - principal
+  - priorité
+  - prise en charge
+  - privilégier
+  - prix
+  - prix au km avec chauffeur
+  - prix au km sans chauffeur
+  - Prix de revient
+  - prix de vente
+  - prix limite
+  - Procédure
+  - procédure judiciaire
+  - procédure SOS
+  - Procès-verbal
+  - production
+  - produit associé
+  - produit bancaire
+  - Produit cible
+  - produit commercial
+  - Produit d'Assurance
+  - produit externe
+  - produit NELB
+  - produit prévoyance
+  - produit retraite
+  - produit santé
+  - produit source
+  - profession
+  - professionnel
+  - Professionnel de santé
+  - professionnelle
+  - profil affecté
+  - PROFIN
+  - programme informatique
+  - projet
+  - Projet décisionnel
+  - Prolongation
+  - Propriété
+  - protection vol
+  - provenance de l'information
+  - province
+  - provision
+  - provision nette
+  - provision S2
+  - provisionnement
+  - provisions
+  - PTAC
+  - publication
+  - puissance fiscale
+  - puissance globale
+  - PVA
+  - PVA employeur
+  - quad
+  - Qualifiant
+  - qualité
+  - quantité
+  - Quantité active
+  - Quantité de mouvement
+  - Quart de journée
+  - Quart d'heure
+  - questionnaire médical
+  - quittance
+  - quota hebdo
+  - quotidien
+  - quotité
+  - rachat
+  - radical
+  - Raison Sociale
+  - Rang
+  - Rang laser
+  - rappel
+  - rattachement
+  - rayon
+  - réactivation
+  - réalisation
+  - réalisé
+  - réassurance
+  - RECC
+  - rechute
+  - recommandé
+  - Recours
+  - recouvrement
+  - recouvrement par voie d'huissier
+  - recyclage
+  - rédacteur
+  - rédacteur courtier
+  - rédacteur de la saisie
+  - rédacteur initiateur
+  - réduction
+  - réduction commerciale
+  - réduction familiale
+  - réel
+  - référence
+  - référence ajustement
+  - référence bancaire
+  - Référence Contrat
+  - référence de documents
+  - référence externe
+  - référence interne
+  - Référence Objet
+  - Référence risquée
+  - référent
+  - référentiel
+  - référentiel des destination analytiques
+  - refus
+  - REGASA
+  - régime fiscal
+  - régime fiscal de base
+  - régime matrimonial
+  - régime obligatoire
+  - régime sécurité sociale
+  - Régime tarifaire
+  - Région
+  - réglé
+  - règle de calcul limite
+  - règlement
+  - règlement assurance santé
+  - règlement effectif
+  - règlement immédiat
+  - règlement précédant
+  - règlement prévoyance
+  - regroupement
+  - regroupement de guichet
+  - regroupement de la période calendaire
+  - regroupement de niveau 1
+  - regroupement de niveau 2
+  - regroupement de niveau 3
+  - regroupement IDW
+  - regroupement rapprochement Assuretat
+  - regroupement rapprochement Epargne
+  - regroupement secteur d'activité
+  - ré-instruction
+  - rejet
+  - rejet CAS
+  - rejet de contentieux
+  - rejet RTL
+  - rejeté
+  - relation
+  - relation bénéficiaire
+  - relation commerciale
+  - relation entre tiers
+  - relation entre tiers assurance
+  - relation hiérarchique
+  - relevé
+  - remboursement
+  - remboursement collectif
+  - remboursement CPAM
+  - remboursement de sinistre
+  - remboursement effectif
+  - remboursement forcé
+  - rembousement
+  - remise différée
+  - remise fournitures
+  - remise pare-brise
+  - remise pied de facture
+  - remise sur main d'œuvre
+  - remise sur part-brise
+  - remise sur pièces détachées
+  - remplaçant
+  - remplacé
+  - rémunération
+  - rendement
+  - renouvellement anticipé
+  - renseignement complémentaire
+  - renumérotation massive
+  - réparation impact supplémentaire
+  - réparation premier impact
+  - REPARMUT
+  - répartition des dossiers
+  - reporting provision actuariale
+  - reprise
+  - reprise du travail
+  - Reprise sur resultat
+  - requête
+  - requête du contrôle
+  - Réseau bancaire
+  - réseau d'appartenance
+  - reserve de capitalisation
+  - résidence fiscale
+  - résiduel
+  - résiliation
+  - responsabilité
+  - responsable
+  - ressource
+  - ressource associée
+  - ressource SAS
+  - restant dû
+  - Reste à charge
+  - restitution
+  - restriction affectée
+  - résultat
+  - résultat du contrôle
+  - Résumé
+  - Retenue positive
+  - retour
+  - revalorisation
+  - revalorisation post-mortem
+  - revente
+  - Revenu
+  - revenu de référence
+  - revenu de remplacement
+  - Risque
+  - risque aggravé
+  - risque couvert
+  - risque métier
+  - RIV VE
+  - ROBIN
+  - rôle
+  - rôle du représentant légal principal
+  - Role du tiers titulaire
+  - routage
+  - routage justificatif
+  - routage volet
+  - RPPS
+  - RUBIS
+  - rubrique
+  - S&P
+  - S1
+  - S2
+  - saisie
+  - Saisie SEN
+  - salarié
+  - salarié du groupe
+  - samedi
+  - sanction
+  - sans
+  - sans espace
+  - sans sécurité sociale
+  - sans taxe
+  - SARA
+  - Savoir faire
+  - schéma
+  - score
+  - Script
+  - secondaire
+  - Secteur
+  - secteur d'activité
+  - Secteur economique
+  - section
+  - section analytique
+  - sécurité sociale
+  - selection
+  - sélection audit
+  - semaine
+  - semaine précédente
+  - semaine suivante
+  - semestre
+  - semestre précédent
+  - semestre suivant
+  - sens de la restriction
+  - sens du montant
+  - SEPA
+  - séparateur
+  - séquence
+  - Sérénis
+  - série
+  - service
+  - service à domicile
+  - service BDG
+  - service de transmission des IJ
+  - service responsable
+  - service technique automobile
+  - session
+  - seuil
+  - seuil annuel
+  - seuil particulier
+  - seuil trimestriel
+  - sévérité
+  - sexe
+  - sicav
+  - SID
+  - siège
+  - Sigle
+  - signalement
+  - signature
+  - simplifié
+  - simulation
+  - sinistre
+  - sinistre prévoyance
+  - SIO
+  - SIREN
+  - SIRET
+  - SIRET radié
+  - site de connexion
+  - site de connexion autorisé
+  - site de gestion
+  - site de stockage
+  - site d'origine
+  - site maître
+  - Situation
+  - situation de la prestation
+  - Situation de stock
+  - situation familiale
+  - situation maritale
+  - situation précédente
+  - SMOD
+  - sociale
+  - société
+  - Société apéritrice
+  - société concurrente
+  - société d'appartenance
+  - Société d'assurance
+  - Société de Gestion de la Garantie
+  - socle
+  - Soins santé
+  - solde
+  - solde crédit
+  - Solde débit
+  - solde du contrat
+  - solidaire
+  - sommation
+  - sortie
+  - soumis à recours
+  - Source
+  - source applicative
+  - Sous Catégorie
+  - Sous Catégorie de l'activité
+  - Sous LOB
+  - sous marché
+  - Sous-activité
+  - Sous-branche IDW
+  - souscripteur
+  - souscription
+  - sous-famille
+  - sous-nature
+  - Sous-produit d'assurance
+  - sous-rôle
+  - sous-traitant 100%
+  - sous-type
+  - sp santé
+  - Spécialité professionnelle
+  - Spécialité professionnelle complémentaire
+  - spécificité
+  - spécifique
+  - SPPI
+  - statement
+  - Statut
+  - statut fédéral
+  - statut professionnel
+  - stock
+  - stockage
+  - structure
+  - subrogation
+  - successeur
+  - suffixe
+  - suivi intrajournalier
+  - suivi journalier
+  - suppression
+  - surprime temporaire
+  - survenance
+  - suspension de commissionnement
+  - suspension de l'utilisateur
+  - suspension du contrat
+  - système
+  - table
+  - tâche
+  - tâche concernée
+  - Taille
+  - Tarif
+  - tarif actif
+  - tarif correspondant
+  - tarif de responsabilité
+  - tarif horaire
+  - tarification
+  - tarification données spéciales
+  - tarification global contrat
+  - tarification global garantie
+  - taux
+  - taux de remboursement
+  - taux de taxe
+  - Taux horaire
+  - Taux horaire fixe
+  - taxe
+  - téléchiffrage
+  - téléphone
+  - téléphone fixe
+  - téléphone portable
+  - téléphone professionnel
+  - télévente
+  - télex
+  - temporaire
+  - tête
+  - tête de pont
+  - tête de sinistre
+  - théorique
+  - ticket modérateur
+  - tiers
+  - tiers assurance
+  - tiers cible
+  - tiers fusionné
+  - tiers interlocuteur privilégié
+  - tiers payant
+  - tiers personne morale
+  - tiers personne physique
+  - tiers personne physique propriétaire
+  - tiers représentant légal principal
+  - tiers source
+  - tiers titulaire
+  - Titre
+  - titre boursier
+  - titre boursier cédé
+  - titre courrier
+  - titulaire du compte bancaire
+  - TNR
+  - total
+  - tournée
+  - tous les salariés au même Régime
+  - TP RC télétransmis
+  - TPE
+  - traitement
+  - traitement de prolongation
+  - traitement estimé
+  - tranche de salaire
+  - transaction
+  - transféré
+  - travail
+  - travailleur à l'étranger
+  - travailleur étranger
+  - travailleur frontalier
+  - travaux peinture
+  - tri
+  - Tri cle
+  - trimestre
+  - trimestre précédent
+  - trimestre suivant
+  - TTC
+  - TVA
+  - Type
+  - type auxiliaire
+  - type d'application
+  - Type de bénéficiaire
+  - type de carence
+  - Type de compte
+  - Type de contrat
+  - type de cumul
+  - Type de destinataire de la dette
+  - Type de destinataire du règlement
+  - type de message
+  - type de mois gratuit
+  - type de motif
+  - type de papier
+  - type de permanence
+  - type de prestation
+  - type de prêt
+  - Type de recours encaissé
+  - Type de référence
+  - Type de référence externe
+  - Type de référence interne
+  - type de relation
+  - Type de risque
+  - Type de saisie SEN
+  - type de structure
+  - Type de Tiers
+  - Type de traitement
+  - type de tranche
+  - Type d'encaissement
+  - Type d'entité bancaire
+  - type d'enveloppe
+  - Type d'événement de la dette
+  - Type d'exclusion
+  - Type d'hospitalisation
+  - Type d'identifiant
+  - Type d'objet de l'assurance
+  - Type d'opération
+  - Type d'utilisateur autorisé
+  - Type d'utilisation
+  - Typologie
+  - unitaire
+  - unité
+  - unité de crédit
+  - unité de gestion
+  - usage
+  - usuel
+  - utilisateur
+  - utilisateur autorisé
+  - utilisation de recommandé
+  - utilisation des BIP
+  - utiliser
+  - valeur
+  - Valeur Alphanumérique
+  - Valeur Alphanumérique calculée
+  - valeur assurée
+  - Valeur boursière
+  - valeur critique
+  - valeur de l'encaissement
+  - Valeur de remboursement
+  - Valeur de revient
+  - Valeur décimale
+  - Valeur entiere
+  - valeur liquidative
+  - Valeur moyenne
+  - validation
+  - validation opération
+  - validation technique
+  - valider
+  - valideur socle technique
+  - validité
+  - valorisation
+  - valorisation confidentiel
+  - Valorisé
+  - variable de contrôle
+  - Variation
+  - véhicule
+  - véhicule de remplacement
+  - véhicule d'occasion
+  - véhicule électrique
+  - véhicule en leasing
+  - véhicule ou embarcation connecté
+  - VEI
+  - vendredi
+  - vendredi après-midi
+  - vendredi matin
+  - vente
+  - vérification saisie
+  - versement
+  - version
+  - Version Commerciale
+  - Version de Garantie
+  - Version de l'avenant
+  - version de tarification
+  - veufs
+  - VHU
+  - vie
+  - ville
+  - ville de naissance
+  - virement
+  - vitesse relevée
+  - Voie d'huissier
+  - voiturette
+  - volets de remboursement des prestations
+  - Volume
+  - VSL
+  - Zone à défaut
+  - zone de navigation
+  - zone de tarification
+  - zonier
+  - zonier auto
+
+
+UNIQUEMENT dans 'trigramme' (1874):
+  - AAM
+  - ABR
+  - ABS
+  - ACC
+  - ACCMGR
+  - ACCPLN
+  - ACCTYP
+  - ACD
+  - ACDDEA
+  - ACDWAR
+  - ACE
+  - ACG
+  - ACGACC
+  - ACGCLO
+  - ACGCTT
+  - ACGDAT
+  - ACGMRG
+  - ACGSLP
+  - ACLAMT
+  - ACLTYP
+  - ACN
+  - ACQ
+  - ACQYEA
+  - ACRINS
+  - ACS
+  - ACT
+  - ACV
+  - ACVCAU
+  - ACVLFC
+  - ACVPRG
+  - ACVQTT
+  - ACY
+  - ADI
+  - ADIADR
+  - ADICAU
+  - ADIINF
+  - ADIIPAFIX
+  - ADIPROSPY
+  - ADL
+  - ADLCOR
+  - ADM
+  - ADMMNG
+  - ADOCMCSIG
+  - ADR
+  - ADRLN1
+  - ADRLN2
+  - ADRLN3
+  - ADRLN4
+  - ADRLN5
+  - ADRLN6
+  - ADRLN7
+  - ADRRPY
+  - ADV
+  - ADVCPG
+  - ADVCSP
+  - ADVCSPAGG
+  - ADVCSPDTL
+  - ADVCTR
+  - ADVEVL
+  - ADVFREMON
+  - ADVWTHCCG
+  - AET
+  - AFD
+  - AFDGRP
+  - AFDPFL
+  - AFDRSI
+  - AFFNWO
+  - AFN
+  - AFTIRC
+  - AFTLEGIRC
+  - AFTLOA
+  - AGC
+  - AGG
+  - AGGAMT
+  - AGGBNKTXN
+  - AGGFNCMVT
+  - AGM
+  - AGMCAU
+  - AHC
+  - AHCCTR
+  - AHCMVT
+  - AHCREJ
+  - AHOCTL
+  - AIN
+  - AJU
+  - AJUREF
+  - AKA
+  - AKS
+  - AKSCOD
+  - ALC
+  - ALLAXSBAL
+  - ALN
+  - AMDVRS
+  - AMP
+  - AMP_FIL
+  - AMT
+  - AMTCCY
+  - AMTDIR
+  - AMTIDT
+  - AMTWRD
+  - AMZ
+  - AMZ_IVY
+  - ANLDTN
+  - ANLSCI
+  - ANM
+  - ANNCBUITX
+  - ANNTHR
+  - ANT
+  - AOR
+  - APE
+  - API
+  - API_FIL
+  - APLCBU
+  - APP
+  - APPCUU
+  - APPSRC
+  - ARCLNK
+  - ARH
+  - ARHDAT
+  - ASGSAR
+  - ASN
+  - ASP
+  - ASS
+  - ASSDAT
+  - ASSLVL
+  - ASSMMB
+  - ASSPRD
+  - ASSRSR
+  - ASTRCORGP
+  - ATB
+  - ATCARH
+  - ATCSCH
+  - ATL
+  - ATLMDU
+  - ATLRPT
+  - ATM
+  - ATT
+  - ATTDAT
+  - ATTINE
+  - ATUEDA
+  - ATUSDA
+  - AUDMNG
+  - AUDSEL
+  - AUT
+  - AUTAMT
+  - AUTCNCACG
+  - AUTCNXSIT
+  - AUTEDI
+  - AUTIFRSACG
+  - AUTUSRTYP
+  - AUXTYP
+  - AVA
+  - AVL
+  - AVR
+  - AVRVAL
+  - AVY
+  - AVYARE
+  - AVYBCH
+  - AVYCAT
+  - AVYSUBCAT
+  - AXS
+  - BAG
+  - BAIWAY
+  - BAIWAYRCR
+  - BAL
+  - BALTSP
+  - BANESP
+  - BBN
+  - BBNDDB
+  - BCG
+  - BCK
+  - BDE
+  - BDF
+  - BDGSVC
+  - BEF
+  - BEKPCK
+  - BELPRD
+  - BEN
+  - BENLNK
+  - BENTYP
+  - BGH
+  - BIB
+  - BIL
+  - BILFOODST
+  - BIPCAD
+  - BIPUSE
+  - BIR
+  - BIRCIT
+  - BIRCTY
+  - BIRDAT
+  - BIRMON
+  - BIS
+  - BISCNT
+  - BISDTA
+  - BISIDX
+  - BIZ
+  - BIZCOD
+  - BIZLINRGP
+  - BIZMDE
+  - BIZPIV
+  - BIZRSK
+  - BKA
+  - BKAOWN
+  - BKD
+  - BLGFSCHHD
+  - BLK
+  - BNDDAT
+  - BNK
+  - BNKDMI
+  - BNKITO
+  - BNKNTTTYP
+  - BNKNWO
+  - BNKPRD
+  - BNT
+  - BNTCAU
+  - BNTREPFLT
+  - BNTSTN
+  - BNTTYP
+  - BOA
+  - BOO
+  - BRC
+  - BRCMST
+  - BRCOFC
+  - BRCRGP
+  - BRD
+  - BRK
+  - BRKEDT
+  - BRW
+  - BSE
+  - BSEDOC
+  - BSEFSCRGM
+  - BSEINS
+  - BSK
+  - BTC
+  - BUI
+  - BYO
+  - CAAOPT
+  - CAL
+  - CALAVL
+  - CALCMI
+  - CALGROAGGCBU
+  - CALMOD
+  - CALPDTRAT
+  - CAPRER
+  - CAPWAR
+  - CAT
+  - CAU
+  - CAUTYP
+  - CBF
+  - CBM
+  - CBR
+  - CBRACCAUT
+  - CBU
+  - CBUCLL
+  - CBUCMI
+  - CBUEXO
+  - CBW
+  - CCDDAT
+  - CCE
+  - CCNBRDCAR
+  - CCS
+  - CCT
+  - CCU
+  - CCY
+  - CCYCHE
+  - CCYEXC
+  - CDDCCY
+  - CDGFAINS1
+  - CDGFAINS2
+  - CDN
+  - CDQ
+  - CDT
+  - CDTBAL
+  - CDTMUT
+  - CDTMVT
+  - CDTUNI
+  - CEE
+  - CEF
+  - CEI
+  - CEICOU
+  - CEN
+  - CFD
+  - CFDAKS
+  - CFDCNN
+  - CFDVLT
+  - CFN
+  - CFS
+  - CHADAT
+  - CHE
+  - CHI
+  - CHN
+  - CHQ
+  - CHS
+  - CHT
+  - CHX
+  - CIM
+  - CIMCTRLNKSTT
+  - CIMFLD
+  - CIMGRP
+  - CIMHEA
+  - CIMRBT
+  - CIV
+  - CLA
+  - CLAMST
+  - CLAWTHCNT
+  - CLD
+  - CLIGRP
+  - CLN
+  - CLNSRC
+  - CLO
+  - CLODAT
+  - CLVCONAPL
+  - CLVCTR
+  - CLVCTRAMD
+  - CLVHELCTR
+  - CLVPVECTR
+  - CLVRBT
+  - CLVRTRCTR
+  - CLVSVGCTR
+  - CLVWBP
+  - CMC
+  - CMCCPG
+  - CMCCTG
+  - CMCLNK
+  - CMCPRD
+  - CMCRDT
+  - CMCSIG
+  - CMCVRS
+  - CMCVRSFML
+  - CMDDAY
+  - CMI
+  - CMIAPL
+  - CMIAPLPRG
+  - CMISUS
+  - CMS
+  - CMT
+  - CMY
+  - CNCTAK
+  - CNCXPS
+  - CND
+  - CNI
+  - CNL
+  - CNLCTR
+  - CNLDAT
+  - CNLTSP
+  - CNNCHN
+  - CNP
+  - CNV
+  - CNX
+  - CNXMOD
+  - CNXSIT
+  - CNXVHLBOA
+  - CNY
+  - COCAJUREF
+  - COCMSGIDT
+  - COCTAXIDT
+  - COD
+  - COGCNY
+  - COM
+  - COMAPP
+  - COMBUG
+  - COMERT
+  - COMGRP
+  - CON
+  - COP
+  - COR
+  - CORCHT
+  - CORTAR
+  - COX
+  - COY
+  - CPM
+  - CPMEXC
+  - CPMRBT
+  - CPN
+  - CPS
+  - CPSRAN
+  - CRE
+  - CREDAT
+  - CREMOD
+  - CRETIM
+  - CRETSP
+  - CRI
+  - CRL
+  - CRN
+  - CRNRAT
+  - CRNSNT
+  - CRTOPT
+  - CSAOFR
+  - CSC
+  - CSO
+  - CSOBSHRST
+  - CSS
+  - CST
+  - CSTVAL
+  - CTABSHRST
+  - CTB
+  - CTC
+  - CTCLSNDMG
+  - CTCMOD
+  - CTCPOI
+  - CTL
+  - CTLAHO
+  - CTLGRP
+  - CTLMSG
+  - CTLPLN
+  - CTLREQ
+  - CTLRST
+  - CTLTPL
+  - CTLVRB
+  - CTR
+  - CTRAMD
+  - CTRBAL
+  - CTRLNK
+  - CTRMGR
+  - CTRREF
+  - CTRS18
+  - CTRS18AMD
+  - CTRSAN
+  - CTRSANAMD
+  - CTRSUS
+  - CTRTRM
+  - CTRTYP
+  - CTS
+  - CTSMAT
+  - CTY
+  - CUS
+  - CVR
+  - CVRBEN
+  - CVRDAY
+  - CVRPCN
+  - CVRPMT
+  - CVRRAN
+  - CYP
+  - DAL
+  - DALCOD
+  - DAR
+  - DAT
+  - DATECH
+  - DATRAN
+  - DATRANRGP
+  - DATVAL
+  - DATWRD
+  - DAY
+  - DAYALW
+  - DAYCLD
+  - DAYTCK
+  - DBLCTL
+  - DBLPAY
+  - DBT
+  - DBTBAL
+  - DBTMVT
+  - DCA
+  - DCADAT
+  - DCAMOD
+  - DCATSP
+  - DCM
+  - DCR
+  - DCS
+  - DDTITOACC
+  - DEA
+  - DEABNT
+  - DEADAT
+  - DEAWAR
+  - DECPRS
+  - DEF
+  - DEFAREA
+  - DEFDSKPAL
+  - DELCPS
+  - DESCAT
+  - DET
+  - DETCAL
+  - DETEVT
+  - DETEVTCRE
+  - DETEVTTYP
+  - DETMOF
+  - DETNAT
+  - DETRCP
+  - DETRCPTYP
+  - DETRCR
+  - DETRCRMOD
+  - DETRLTEVT
+  - DFCTYP
+  - DFD
+  - DFDDST
+  - DFDFEEACQ
+  - DFDTRM
+  - DFN
+  - DFR
+  - DIE
+  - DIEEXO
+  - DILDAT
+  - DIS
+  - DISCHN
+  - DISGRP
+  - DISRAN
+  - DLNCAL
+  - DLNDAT
+  - DLT
+  - DLTTSP
+  - DLY
+  - DMGOBJ
+  - DMGPRS
+  - DMGWARMAXEXO
+  - DMGWARMINEXO
+  - DMN
+  - DNTCRWOFR
+  - DNTIGROFR
+  - DNTINC
+  - DNTIPLOFR
+  - DOC
+  - DOCREF
+  - DPA
+  - DPDCHI
+  - DPE
+  - DPL
+  - DPM
+  - DPO
+  - DPS
+  - DPSGRP
+  - DPT
+  - DRI
+  - DRIKLMPRI
+  - DRILIC
+  - DRILICCTY
+  - DRN
+  - DSARAN
+  - DSC
+  - DSE
+  - DSK
+  - DSMTSP
+  - DST
+  - DTA
+  - DTC
+  - DTF
+  - DTL
+  - DTLLIN
+  - DTM
+  - DUEDAT
+  - DUETRM
+  - DUETSP
+  - DUR
+  - DURWRD
+  - DVA
+  - DVL
+  - DVN
+  - EBK
+  - ECB
+  - ECO
+  - ECONAT
+  - ECOSCT
+  - ECT
+  - ECY
+  - EDADWH
+  - EDAUID
+  - EDI
+  - EDT
+  - EDTPFLCOU
+  - EFT
+  - EFTBEN
+  - EFTDAT
+  - EFTEDI
+  - EFTFUTCTR
+  - EFTMON
+  - EFTPAY
+  - EFTTIM
+  - EGB
+  - EGBBTC
+  - EGBCAU
+  - EITASSGPS
+  - ELCVHL
+  - ELM
+  - EML
+  - EMP
+  - EMPCBU
+  - EMPCTR
+  - EMPOFR
+  - EMPRGMEQU
+  - END
+  - ENDCTRCAU
+  - ENDDAT
+  - ENDTIM
+  - ENDTSP
+  - ENS
+  - ENT
+  - ENTDAT
+  - ENTEXI
+  - EPC
+  - EPL
+  - EPLASP
+  - EPLCBU
+  - EPT
+  - EQUGRP
+  - ERLREN
+  - ERR
+  - ERT
+  - ESI
+  - ESITRE
+  - ESPINOTAX
+  - ESPVAT
+  - EST
+  - ESTMST
+  - ETIUID
+  - ETNDAT
+  - ETR
+  - ETS
+  - ETSCTR
+  - ETSUID
+  - ETXAMT
+  - ETXLBO
+  - EVLSTT
+  - EVLTYP
+  - EVT
+  - EXC
+  - EXCRAT
+  - EXDEXO
+  - EXDMSG
+  - EXE
+  - EXEDAT
+  - EXETSP
+  - EXI
+  - EXICAU
+  - EXIDAT
+  - EXL
+  - EXLREN
+  - EXLTYP
+  - EXO
+  - EXP
+  - EXR
+  - EXRDAT
+  - FAF
+  - FAM
+  - FAMRDT
+  - FAMSTN
+  - FCTFID
+  - FCTIDT
+  - FDT
+  - FED
+  - FEDSTT
+  - FEE
+  - FEEAGM
+  - FEECON
+  - FEEEXO
+  - FEEICD
+  - FEEOTE
+  - FIH
+  - FIL
+  - FILDIS
+  - FIMCLA
+  - FIXDAT
+  - FIXHOURAT
+  - FIXVHL
+  - FIXVHLLOW
+  - FLD
+  - FLG
+  - FLO
+  - FLPRTG
+  - FML
+  - FNC
+  - FNCGUI
+  - FNCMVT
+  - FNCTXN
+  - FNCTXN_DAR
+  - FNL
+  - FNS
+  - FOMOPE
+  - FOMSCA
+  - FON
+  - FONACEADV
+  - FOR
+  - FRA
+  - FRD
+  - FRDRBT
+  - FREKLM
+  - FREMON
+  - FREMONCPG
+  - FREMONTYP
+  - FRERDO
+  - FRGCCY
+  - FRGWRK
+  - FRM
+  - FRMCAU
+  - FRMSTN
+  - FRO
+  - FRU
+  - FRY
+  - FRYAFN
+  - FRYMRN
+  - FSC
+  - FSCCTF
+  - FSCFWK
+  - FSCRES
+  - FSCRGM
+  - FSCYEA
+  - FSN
+  - FST
+  - FSTCTR
+  - FSTDAT
+  - FSTDAY
+  - FSTENT
+  - FSTIPAFIX
+  - FSTRCV
+  - FSTUSE
+  - FSTWRKSOP
+  - FUDACT
+  - FUE
+  - FUL
+  - FUTPUMEIT
+  - FVR
+  - FXG
+  - GARUITOPT
+  - GCO
+  - GCOCOR
+  - GDE
+  - GDR
+  - GENACC
+  - GENMEE
+  - GENSCA
+  - GEO
+  - GEODIV
+  - GEOLOC
+  - GEOPMT
+  - GIVSCU
+  - GLOAMT
+  - GLOPOW
+  - GLOPRGCTR
+  - GLOPRGWAR
+  - GLSDMGRPRLPS
+  - GLSFMGDMG
+  - GLZAGM
+  - GMP
+  - GMP_FIL
+  - GNE
+  - GNEMSG
+  - GNT
+  - GNTTSP
+  - GOA
+  - GOAACH
+  - GOASCP
+  - GOTBNKPOW
+  - GOTIDVCNY
+  - GOTPAAAHR
+  - GPOCOU
+  - GPSMNG
+  - GRC
+  - GRD
+  - GRDCAP
+  - GRGOWNOBJ
+  - GROAGGCBU
+  - GROAMT
+  - GRP
+  - GRPCDTMUT
+  - GRPCTR
+  - GRPEMP
+  - GRPSCA
+  - GRY
+  - GUI
+  - HAC
+  - HACBEN
+  - HACCTL
+  - HACMSG
+  - HAGDAT
+  - HAM
+  - HCAACM
+  - HCACAM
+  - HCACPM
+  - HCACTY
+  - HCG
+  - HCL
+  - HCLMSG
+  - HCP
+  - HCR
+  - HCRBSK
+  - HCREST
+  - HDA
+  - HDG
+  - HDI
+  - HEA
+  - HEACTR
+  - HELAOR
+  - HELPRD
+  - HELSCA
+  - HELVHL
+  - HID
+  - HIECBR
+  - HIERLS
+  - HIHUSD
+  - HIPACC
+  - HIPDMG
+  - HIRBEN
+  - HIRBNT
+  - HIRCTF
+  - HIRGRP
+  - HLFDAY
+  - HLFHOU
+  - HLK
+  - HMP
+  - HOLSHA
+  - HOM
+  - HOMFED
+  - HOMSVC
+  - HOU
+  - HOURAT
+  - HPA
+  - HPH
+  - HPR
+  - HPZ
+  - HPZTYP
+  - HQT
+  - HRA
+  - HRB
+  - HRSEVTEMP
+  - HRSREG
+  - HST
+  - HTMAVY
+  - HUL
+  - HUSCND
+  - IBA
+  - ICA
+  - ICPWRKWAR
+  - ICTCAU
+  - IDMTROSVC
+  - IDQEVT
+  - IDT
+  - IDTFAM
+  - IDTTYP
+  - IDVCNY
+  - IDVCNYSIG
+  - IDVWBP
+  - IDWBCH
+  - IDWRGP
+  - IDWSUBBCH
+  - IDX
+  - IFC
+  - IFX
+  - IGT
+  - IGTDAT
+  - IIREDT
+  - IJC
+  - ILWOPT
+  - ILWYATXTS
+  - IMI
+  - IMMLAN
+  - IMMPAY
+  - IMP
+  - IMPDAT
+  - IMT
+  - INC
+  - INCLNK
+  - INCRSK
+  - IND
+  - INE
+  - INFSRC
+  - INL
+  - INLCMI
+  - INLETR
+  - INO
+  - INP
+  - INPCHK
+  - INPCHN
+  - INPDAT
+  - INPEDT
+  - INPOPE
+  - INPTIM
+  - INR
+  - INS
+  - INSACG
+  - INSAOR
+  - INSBCH
+  - INSBPR
+  - INSCBR
+  - INSCNY
+  - INSCTR
+  - INSCVR
+  - INSDAT
+  - INSDMN
+  - INSFAM
+  - INSITDRGIORG
+  - INSMON
+  - INSOBJTYP
+  - INSOTK
+  - INSPRD
+  - INSTEM
+  - INSTSP
+  - INT
+  - INTBAL
+  - INTCMI
+  - INTCNN
+  - INTREF
+  - INTREFTYP
+  - IPT
+  - IPTTYP
+  - IRADAYMOF
+  - IRADAYTCK
+  - IRC
+  - IRI
+  - ISD
+  - ISDDMG
+  - ISDOBJ
+  - ISDVAL
+  - ISI
+  - ISOCTY
+  - ISS
+  - ITD
+  - ITI
+  - ITL
+  - ITR
+  - ITRRPT
+  - ITU
+  - ITV
+  - ITX
+  - ITXAMT
+  - IVK
+  - IVL
+  - IVR
+  - IVY
+  - IVYDAT
+  - JDCPSS
+  - JLN
+  - JLNDAT
+  - JNB
+  - JUS
+  - JUSRTG
+  - KEY
+  - KEY1
+  - KEY2
+  - KEY3
+  - KEY4
+  - KEY5
+  - KEY6
+  - KEYMMTADV
+  - KLM
+  - KND
+  - KNH
+  - KWG
+  - KWO
+  - LA2GCG
+  - LAM
+  - LAM_FIL
+  - LAN
+  - LANTYP
+  - LASRNK
+  - LBO
+  - LBODST
+  - LCHRAN
+  - LCKDAT
+  - LCL
+  - LCMFEE
+  - LCT
+  - LCZADR
+  - LDICNY
+  - LEG
+  - LEGCAT
+  - LEGCBU
+  - LEGCPC
+  - LEGEST
+  - LEGFAM
+  - LEGNAT
+  - LEI
+  - LEN
+  - LEP
+  - LFC
+  - LGC
+  - LGU
+  - LIF
+  - LIFMSCWAR
+  - LIFWAR
+  - LIM
+  - LIMCALRUL
+  - LIMPRI
+  - LIN
+  - LIR
+  - LIR_FIL
+  - LIS
+  - LIT
+  - LITACT
+  - LITDAT
+  - LITREJ
+  - LITTRM
+  - LKBCTL
+  - LKBTDP
+  - LKBTDPINS
+  - LN1
+  - LN2
+  - LN3
+  - LNG
+  - LNK
+  - LNKCNN
+  - LNKDAT
+  - LNKHAC
+  - LNKINF
+  - LNKITI
+  - LNKTSP
+  - LNT
+  - LOA
+  - LOADAT
+  - LOC
+  - LONTRMLVE
+  - LOS
+  - LOSPOI
+  - LPSEXD
+  - LQN
+  - LQNDAT
+  - LSGVHL
+  - LST
+  - LST36M
+  - LSTCDT
+  - LSTCTR
+  - LSTDAT
+  - LSTDETEVT
+  - LSTDOC
+  - LSTMOF
+  - LSTNBR
+  - LSTOPE
+  - LSTOPEPFD
+  - LSTRCT
+  - LSTRCV
+  - LSTSTT
+  - LSTTRM
+  - LSTUPD
+  - LSTXTS
+  - LTE
+  - LTI
+  - LTIUID
+  - LTU
+  - LUS
+  - LV1
+  - LV1RGP
+  - LV2
+  - LV2RGP
+  - LV3
+  - LV3RGP
+  - LV4
+  - LVL
+  - LWD
+  - MAI
+  - MAICTC
+  - MAITRM
+  - MALEXO
+  - MARBNKMVT
+  - MARSPS
+  - MAS
+  - MAX
+  - MAXAMT
+  - MAXLCMFEE
+  - MBR
+  - MCCCOD
+  - MCHALLBRD
+  - MCR
+  - MDCFMS
+  - MDCHST
+  - MDCQNR
+  - MDE
+  - MDLLAW
+  - MDY
+  - MEA
+  - MGE
+  - MGR
+  - MGRCSL
+  - MGT
+  - MGTAGM
+  - MGTCCY
+  - MGTCMI
+  - MGTCTL
+  - MGTITD
+  - MGTTEM
+  - MGTUNI
+  - MIG
+  - MIGCTR
+  - MIL
+  - MILADR
+  - MILCTG
+  - MILEDI
+  - MILTPL
+  - MIN
+  - MINAMT
+  - MIU
+  - MKG
+  - MLA
+  - MLGRPVROL
+  - MLV
+  - MMB
+  - MMD
+  - MND
+  - MNDAFN
+  - MNDMRN
+  - MNL
+  - MNLDEFCHX
+  - MNS
+  - MOETEM
+  - MOF
+  - MOFBOA
+  - MOFMAKIDV
+  - MON
+  - MOO
+  - MPYMBR
+  - MRARGM
+  - MRASTT
+  - MRK
+  - MRN
+  - MS1
+  - MS2
+  - MSC
+  - MSCINS
+  - MSG
+  - MSGIDT
+  - MSGTYP
+  - MST
+  - MSTPOL
+  - MSTSIT
+  - MSVNBG
+  - MTO
+  - MTOIDO
+  - MTPFCO
+  - MULAHCCTR
+  - MULSEN
+  - MULTPHCTR
+  - MUTRELCTR
+  - MVT
+  - NAC
+  - NAT
+  - NAV
+  - NBK
+  - NBR
+  - NBRWRD
+  - NEFVHL
+  - NEFVHLLPS
+  - NEG
+  - NEGCCY
+  - NETAMT
+  - NETPVN
+  - NFL
+  - NID
+  - NIN
+  - NLUVHL
+  - NME
+  - NML
+  - NOD
+  - NOE
+  - NOF
+  - NOTREF
+  - NRCCTL
+  - NRTAMT
+  - NSD
+  - NSDEMP
+  - NSDEST
+  - NTF
+  - NTN
+  - NTT
+  - NTTMGT
+  - NTTOWNOBJ
+  - NTTTPC
+  - NVGARE
+  - NXTACT
+  - NXTDATRAN
+  - NXTDAY
+  - NXTMON
+  - NXTPRC
+  - NXTQUA
+  - NXTSMR
+  - NXTWEK
+  - NXTYEA
+  - OBJ
+  - OBJREF
+  - OBN
+  - OBS
+  - OCC
+  - OCCDAT
+  - OCCTSP
+  - OCCYEA
+  - ODF
+  - OFC
+  - OFINTC
+  - OFN
+  - OFR
+  - OFRNAT
+  - OIS
+  - OISBISCNT
+  - OISDTA
+  - OISIDX
+  - OLD
+  - ONH
+  - OPCBON
+  - OPCCMCSIG
+  - OPCLSNAJU
+  - OPCLSNDMG
+  - OPCSDR
+  - OPE
+  - OPENAT
+  - OPEPFD
+  - OPETYP
+  - OPEVLD
+  - OPNDATWDW
+  - OPP
+  - OPQPNT
+  - OPT
+  - ORD
+  - ORGOWN
+  - ORGRPY
+  - ORIFLW
+  - ORN
+  - ORNAPP
+  - ORNBNT
+  - ORNCCY
+  - ORNDGI
+  - ORNFRM
+  - ORNSIT
+  - ORNXMT
+  - ORP
+  - OSD
+  - OSHXTS
+  - OST
+  - OSTCAP
+  - OTHCMI
+  - OTHCOY
+  - OTHMATDST
+  - OTHPRGGRD
+  - OTHTYP
+  - OTHWAR
+  - OUTCHN
+  - OVL
+  - OVR
+  - OZC
+  - PAC
+  - PACTHR
+  - PAD
+  - PAECNY
+  - PAG
+  - PAI
+  - PAPTYP
+  - PAY
+  - PAYBEN
+  - PAYBSE
+  - PAYCCY
+  - PAYCND
+  - PAYCTR
+  - PAYDTN
+  - PAYMOD
+  - PAYRCP
+  - PAYRCPTYP
+  - PAYTIMLIM
+  - PBCHLY
+  - PBCHSPEST
+  - PCAMSCWAR
+  - PCAWAR
+  - PCE
+  - PCEDRI
+  - PCHDAT
+  - PCK
+  - PCMCTR
+  - PCMMBR
+  - PCS
+  - PCSSPS
+  - PCT
+  - PDDAMT
+  - PDN
+  - PDO
+  - PDT
+  - PDTRAT
+  - PEO
+  - PEREND
+  - PERSTA
+  - PEYPNT
+  - PF2
+  - PF2_FIL
+  - PFC
+  - PFCORD
+  - PFL
+  - PFM
+  - PFS
+  - PFX
+  - PHY
+  - PID
+  - PIDIFR
+  - PIO
+  - PIT
+  - PITCHA
+  - PLC
+  - PLCPUB
+  - PLICST
+  - PMC
+  - PMGMOF
+  - PMN
+  - PMNMDA
+  - PMNTYP
+  - PNTFREDPR
+  - PNTWRK
+  - POL
+  - POS
+  - POSMUL
+  - POT
+  - POTDAT
+  - PPH
+  - PRB
+  - PRC
+  - PRCDAT
+  - PRDFAM
+  - PRDGNT
+  - PRDNAT
+  - PRF
+  - PRG
+  - PRGAJU
+  - PRGRGM
+  - PRGSCA
+  - PRGVRS
+  - PRI
+  - PRJ
+  - PRLPMNDSA
+  - PRLTIMAVY
+  - PRLTIMTHPAVY
+  - PRO
+  - PROCAT
+  - PROSPY
+  - PROSTT
+  - PRR
+  - PRS
+  - PRSDTA
+  - PRTDST
+  - PRVBBN
+  - PRVBNT
+  - PRVCBUCLL
+  - PRVCTR
+  - PRVDATRAN
+  - PRVDAY
+  - PRVMON
+  - PRVPAY
+  - PRVQUA
+  - PRVSMR
+  - PRVWEK
+  - PRVYEA
+  - PRY
+  - PSMRVL
+  - PSSCTL
+  - PST
+  - PSVRTT
+  - PTA
+  - PTACTY
+  - PTF
+  - PTF_CHT
+  - PTF_IVY
+  - PTFCCY
+  - PTR
+  - PUB
+  - PUBDAT
+  - PUBTSP
+  - PUM
+  - PUMACQ
+  - PUMACQCAL
+  - PUMCOL
+  - PUMFUT
+  - PUMFUTCAL
+  - PUMISS
+  - PUMISSNAQ
+  - PUMREFTHO
+  - PVD
+  - PVECTR
+  - PVEHCA
+  - PVEPRD
+  - PVI
+  - PVN
+  - PVNCAL
+  - PVNSO2
+  - PVV
+  - PVVBNT
+  - PVVCIM
+  - PVVPAY
+  - PVVPAYBEN
+  - PWDADM
+  - PYC
+  - PYE
+  - PYP
+  - PYRSFW
+  - QAD
+  - QAL
+  - QLF
+  - QOT
+  - QTA
+  - QTT
+  - QTTMVT
+  - QUA
+  - QUADAY
+  - QUAHOU
+  - QUATHR
+  - QUO
+  - QUOCTY
+  - QUOFLO
+  - RAD
+  - RAL
+  - RAN
+  - RAS
+  - RAT
+  - RATSCA
+  - RATTAX
+  - RBC
+  - RBK
+  - RBS
+  - RBT
+  - RBTRAT
+  - RCA
+  - RCADAT
+  - RCC
+  - RCD
+  - RCDRCSTYP
+  - RCE
+  - RCOACC
+  - RCRRST
+  - RCS
+  - RCT
+  - RCTDAT
+  - RCTMOD
+  - RCTTYP
+  - RCTVAL
+  - RCV
+  - RCY
+  - RDG
+  - RDGSTT
+  - RDP
+  - RDT
+  - REATSP
+  - REF
+  - REFCBU
+  - REFDAT
+  - REFINO
+  - REFKEY
+  - REFRAT
+  - REFTSP
+  - REFTYP
+  - REG
+  - REGMOD
+  - REGNBR
+  - REGUSE
+  - REI
+  - REJ
+  - REJTRM
+  - REL
+  - RELCST
+  - RELESA
+  - RELESACGE
+  - RELRBT
+  - REPITR
+  - REQ
+  - REQDAT
+  - REQORNFLO
+  - REQSTP
+  - REQTEM
+  - RER
+  - RESCTY
+  - RESTWN
+  - REZ
+  - REZMLV
+  - RFE
+  - RFG
+  - RFGDOR
+  - RGN
+  - RGNMGT
+  - RGP
+  - RGPKEY
+  - RGS
+  - RIG
+  - RIGFUL
+  - RIN
+  - RIU
+  - RKDOBJ
+  - RKDREF
+  - RLG
+  - RLN
+  - RLP
+  - RLSTYP
+  - RLT
+  - RLTCOR
+  - RLTPER
+  - RLTREQ
+  - RLZ
+  - RMGDAY
+  - RMS
+  - RMSWAR
+  - RMU
+  - RMVAST
+  - RNG
+  - RNK
+  - RNTDFC
+  - ROEXPS
+  - ROL
+  - ROM
+  - RON
+  - RPD
+  - RPDCNY
+  - RPDCTR
+  - RPDVHL
+  - RPI
+  - RPICAU
+  - RPM
+  - RPT
+  - RPY
+  - RRD
+  - RSD
+  - RSIDIR
+  - RSK
+  - RSKCVD
+  - RSKTYP
+  - RSL
+  - RSLDAT
+  - RSP
+  - RSPPRG
+  - RSPSVC
+  - RSR
+  - RSRCOU
+  - RST
+  - RSY
+  - RTCTACLA
+  - RTCTAMRGCLA
+  - RTE
+  - RTEYEA
+  - RTG
+  - RTLREJ
+  - RTN
+  - RTNCAU
+  - RTNDAT
+  - RTNMSG
+  - RTNSND
+  - RTP
+  - RTR
+  - RTRPRD
+  - RTW
+  - RULLIM
+  - RVL
+  - RVN
+  - RVR
+  - RVWDAT
+  - RVWTSP
+  - SAL
+  - SAO
+  - SAR
+  - SASCEI
+  - SASCMY
+  - SASCOD
+  - SASORG
+  - SASRSR
+  - SBC
+  - SBERCS
+  - SBOONL
+  - SBS
+  - SBSDAT
+  - SBSFEE
+  - SBSIDX
+  - SBSTIM
+  - SCA
+  - SCC
+  - SCD
+  - SCH
+  - SCHEDA
+  - SCHSDA
+  - SCI
+  - SCICOD
+  - SCL
+  - SCLRSN
+  - SCO
+  - SCT
+  - SCU
+  - SCV
+  - SDADWH
+  - SDAUID
+  - SDR
+  - SDTCAD
+  - SEL
+  - SELCCY
+  - SEN
+  - SENETR
+  - SENETRTYP
+  - SEP
+  - SEQ
+  - SES
+  - SEV
+  - SFF
+  - SFN
+  - SFW
+  - SFX
+  - SGCITV
+  - SGN
+  - SGT
+  - SHAHOLUPD
+  - SHH
+  - SHICTR
+  - SHM
+  - SHSREGHPR
+  - SIA
+  - SIDSTT
+  - SIEACC
+  - SIOSTT
+  - SITMGT
+  - SIZ
+  - SKC
+  - SKOSRT
+  - SLCTYP
+  - SLLPRI
+  - SLLRAT
+  - SLYCAT
+  - SLYSLC
+  - SMA
+  - SMG
+  - SMK
+  - SML
+  - SMN
+  - SMR
+  - SMY
+  - SNI
+  - SNP
+  - SNT
+  - SNY
+  - SO1
+  - SO2
+  - SOFCAT
+  - SOP
+  - SOPCAU
+  - SOR
+  - SORKE
+  - SOSPRR
+  - SPDREA
+  - SPE
+  - SPECND
+  - SPEDTA
+  - SPEDTAPRG
+  - SPF
+  - SPI
+  - SPIMOD
+  - SPL
+  - SPP
+  - SPS
+  - SPSANT
+  - SRAIDF
+  - SRC
+  - SRCAPP
+  - SRCCTR
+  - SRCPRD
+  - SRD
+  - SRI
+  - SRM
+  - SRN
+  - SRP
+  - SRSFLD
+  - SRT
+  - SSC
+  - SSCRGM
+  - SSDBNT
+  - SSS
+  - STA
+  - STADAT
+  - STATIM
+  - STATRM
+  - STATSP
+  - STC
+  - STCSTN
+  - STD
+  - STIUID
+  - STM
+  - STN
+  - STNCAU
+  - STO
+  - STOAPP
+  - STOARE
+  - STOSIT
+  - STR
+  - STRTYP
+  - STSUID
+  - STT
+  - SUBAVY
+  - SUBCAT
+  - SUBFAM
+  - SUBLOB
+  - SUBMDE
+  - SUBNAT
+  - SUBROL
+  - SUBTYP
+  - SUSCAU
+  - SUSDAT
+  - SUT
+  - SUTCTR
+  - SUTINO
+  - SVC
+  - SVGRCORGP
+  - SWD
+  - SWICAN
+  - SYS
+  - SYSDAT
+  - TAG
+  - TAK
+  - TAO
+  - TARARE
+  - TAS
+  - TAX
+  - TAXACC
+  - TAXCDT
+  - TAXEXO
+  - TAXLVY
+  - TAXOPT
+  - TBL
+  - TBUGRP
+  - TDP
+  - TDPINS
+  - TDPLEP
+  - TDPMAICTC
+  - TDPMER
+  - TDPMLGRPV
+  - TDPPCE
+  - TDPPYP
+  - TDPPYPOWN
+  - TDPSRC
+  - TDPTRG
+  - TDPTYP
+  - TECBSEVLO
+  - TECIDT
+  - TECVLD
+  - TEL
+  - TEM
+  - TER
+  - TERCAL
+  - TERCTR
+  - TERDAT
+  - TFD
+  - TFDDET
+  - TFFACD
+  - THD
+  - THDAFN
+  - THDMRN
+  - THFPTC
+  - THO
+  - THR
+  - TIM
+  - TIMLIM
+  - TIT
+  - TITMIL
+  - TKG
+  - TLX
+  - TMP
+  - TMPAPM
+  - TNKACT
+  - TNKACTCPI
+  - TO2
+  - TOT
+  - TOTAMT
+  - TPH
+  - TPHAGE
+  - TPHROL
+  - TPO
+  - TPP
+  - TPPCOYSHMTLS
+  - TRETYP
+  - TRF
+  - TRFCAMGEC
+  - TRG
+  - TRGCTR
+  - TRGPRD
+  - TRGTEM
+  - TRIEVT
+  - TRM
+  - TRMCAL
+  - TRMCMI
+  - TRMSCA
+  - TSP
+  - TTH
+  - TTS
+  - TUD
+  - TUDAFN
+  - TUDMRN
+  - TUP
+  - TUP_FIL
+  - TWN
+  - TXN
+  - TYP
+  - UBKDAT
+  - UDVEVL
+  - UEPRAN
+  - UID
+  - UITWAR
+  - ULIKLM
+  - UNI
+  - UNP
+  - UNPTRM
+  - UNV
+  - UNZ
+  - UNZMVL
+  - UPD
+  - UPDDAT
+  - UPDTIM
+  - UPDTSP
+  - USDCAN
+  - USDPAYCND
+  - USDVHL
+  - USE
+  - USEDAT
+  - USETYP
+  - USR
+  - USRFEE
+  - USRSUS
+  - USU
+  - VAL
+  - VALCCY
+  - VALFRM
+  - VALRDP
+  - VAT
+  - VATSJN
+  - VCANOD
+  - VENDAT
+  - VENTIM
+  - VENTSP
+  - VHL
+  - VHLGAD
+  - VHLSBNLPS
+  - VHLTECSVC
+  - VHLWTHLIC
+  - VHLZON
+  - VLD
+  - VLDTSP
+  - VLM
+  - VLT
+  - VNHPNT
+  - VRS
+  - VRT
+  - VSTDAT
+  - VSTTIM
+  - VSTTSP
+  - WAIEVT
+  - WAITIM
+  - WAR
+  - WARCNY
+  - WARNSTIRC
+  - WARSCB
+  - WARSVC
+  - WARVRS
+  - WDD
+  - WDDAFN
+  - WDDMRN
+  - WDW
+  - WEI
+  - WEK
+  - WID
+  - WIW
+  - WKCCBU
+  - WLD
+  - WRD
+  - WRDDAY
+  - WRK
+  - WRKDAY
+  - WRKSOP
+  - WSHDST
+  - WTH
+  - WTHDRIKLMPRI
+  - WTHSPC
+  - WTHSSC
+  - XMT
+  - XMT_RNG
+  - XMTCOD
+  - XMTTEM
+  - XPAWRK
+  - XPC
+  - XPR
+  - XPSCEN
+  - XPSCST
+  - XPSFEE
+  - XTA
+  - XTR
+  - XTRCMI
+  - XTRCNN
+  - XTRCOR
+  - XTRPRD
+  - XTRREF
+  - XTRREFTYP
+  - XTSPRC
+  - YDR
+  - YEA
+  - YEAMOEDAY
+  - YEAMON
+  - YIE
+  - YOY
+  - ZON
+

@@ -14,8 +14,8 @@
 # $Output : Chemin du fichier Excel de sortie (fusion)
 # ------------------------------------------------------------------------------
 param(
-    [string]$Folder = "\\uf11d001\EIDDIJON\App\IBIQ\03-Maintenances\020-Evolutions\RU555496-POD_Workflow-Nomenclature\09-Livrable\Fichiers outils",
-    [string]$Output = "\\uf11d001\EIDDIJON\App\IBIQ\03-Maintenances\020-Evolutions\RU555496-POD_Workflow-Nomenclature\09-Livrable\Fichiers outils\Merge-IBIX_XXXX_Outil_Onglet_Objets de gestion.xlsx"
+    [string]$Folder = "C:\Users\amami\GitHub\merge\test",
+    [string]$Output = "C:\Users\amami\GitHub\merge\test\merge\Maquette.xlsx"
 )
 
 Write-Host "=== FUSION DES ONGLETS OBJETS DE GESTION ===" -ForegroundColor Cyan
@@ -24,10 +24,10 @@ Write-Host "=== FUSION DES ONGLETS OBJETS DE GESTION ===" -ForegroundColor Cyan
 # FERMETURE DES INSTANCES EXCEL
 # ------------------------------------------------------------------------------
 # Ferme toutes les instances Excel en cours pour éviter les conflits COM
-# Attente de 3 secondes pour laisser le temps aux processus de se terminer
+# Attente de 5 secondes pour laisser le temps aux processus de se terminer
 # ------------------------------------------------------------------------------
 Get-Process EXCEL -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-Start-Sleep -Seconds 3
+Start-Sleep -Seconds 5
 
 # ------------------------------------------------------------------------------
 # RECUPERATION DES FICHIERS SOURCES
@@ -52,95 +52,124 @@ Write-Host "Fichiers: $($Sources.Count) | Sortie: $Output`n"
 # $AllHeaders      : Liste de tous les en-têtes uniques trouvés
 # $totalLignes     : Compteur total de lignes lues
 # $doublons        : Compteur de doublons ignorés
-# $SourceFormatting: Stocke le formatage du premier fichier pour le reproduire
 # ------------------------------------------------------------------------------
 $AllData = @{}
 $AllHeaders = [System.Collections.ArrayList]@()
 $totalLignes = 0
 $doublons = 0
-$SourceFormatting = $null
 
 # ==============================================================================
 # FONCTION : Read-ExcelFile
 # ==============================================================================
 # Description : Lit un fichier Excel et extrait les données de l'onglet
-#               "Objets de gestion"
+#               "Objets de gestion" avec système de retry automatique
 # Paramètres  :
-#   - $FilePath         : Chemin du fichier Excel à lire
-#   - $CaptureFormatting: Si activé, capture aussi le formatage des cellules
-# Retourne    : Hashtable avec Data, Rows, Cols et optionnellement Formatting
+#   - $FilePath : Chemin du fichier Excel à lire
+#   - $MaxRetries : Nombre maximum de tentatives (défaut: 3)
+# Retourne    : Hashtable avec Data, Rows, Cols
 # ==============================================================================
 function Read-ExcelFile {
-    param($FilePath, [switch]$CaptureFormatting)
+    param(
+        $FilePath,
+        [int]$MaxRetries = 3
+    )
 
-    $Excel = $null
     $result = $null
-    Write-Host "Lecture de $FilePath..." -ForegroundColor DarkYellow
-    try {
-        # ------------------------------------------------------------------
-        # INITIALISATION DE L'APPLICATION EXCEL
-        # ------------------------------------------------------------------
-        # Création d'une instance Excel invisible pour la lecture
-        # ------------------------------------------------------------------
-        $Excel = New-Object -ComObject Excel.Application
-        $Excel.Visible = $false
-        $Excel.DisplayAlerts = $false
-        $Excel.ScreenUpdating = $false
+    $attempt = 0
 
-        # Ouvrir le fichier en lecture seule (paramètre $true)
-        $Workbook = $Excel.Workbooks.Open($FilePath, $false, $true)
+    while ($attempt -lt $MaxRetries -and $null -eq $result) {
+        $attempt++
 
-        # ------------------------------------------------------------------
-        # RECHERCHE DE L'ONGLET "Objets de gestion"
-        # ------------------------------------------------------------------
-        $Sheet = $null
-        foreach ($ws in $Workbook.Worksheets) {
-            if ($ws.Name -eq "Objets de gestion") {
-                $Sheet = $ws
-                break
-            }
+        if ($attempt -gt 1) {
+            Write-Host "  Tentative $attempt/$MaxRetries..." -ForegroundColor Yellow -NoNewline
+            Start-Sleep -Seconds 3
+        } else {
+            Write-Host "Lecture de $FilePath..." -ForegroundColor DarkYellow
         }
 
-        if ($Sheet) {
-            # --------------------------------------------------------------
-            # EXTRACTION DES DONNEES
-            # --------------------------------------------------------------
-            # Value2 retourne les valeurs brutes (dates = nombres sériels)
-            # --------------------------------------------------------------
-            $UsedRange = $Sheet.UsedRange
-            $ColCount = $UsedRange.Columns.Count
+        $Excel = $null
+        $Workbook = $null
+        $Sheet = $null
+        $UsedRange = $null
+        $Worksheets = $null
 
-            $result = @{
-                Data = $UsedRange.Value2
-                Rows = $UsedRange.Rows.Count
-                Cols = $ColCount
-            }
+        try {
+            # ------------------------------------------------------------------
+            # INITIALISATION DE L'APPLICATION EXCEL
+            # ------------------------------------------------------------------
+            $Excel = New-Object -ComObject Excel.Application
+            $Excel.Visible = $false
+            $Excel.DisplayAlerts = $false
+            $Excel.ScreenUpdating = $false
 
-            if ($CaptureFormatting) {
-                $result.Formatting = @{
-                    HeaderRowHeight = $Sheet.Rows.Item(1).RowHeight
-                    HasAutoFilter = $Sheet.AutoFilterMode
+            # Ouvrir le fichier en lecture seule
+            $Workbook = $Excel.Workbooks.Open($FilePath, $false, $true)
+            $Worksheets = $Workbook.Worksheets
+
+            # ------------------------------------------------------------------
+            # RECHERCHE DE L'ONGLET "Objets de gestion"
+            # ------------------------------------------------------------------
+            foreach ($ws in $Worksheets) {
+                if ($ws.Name -eq "Objets de gestion") {
+                    $Sheet = $ws
+                    break
                 }
             }
-        }
 
-        $Workbook.Close($false)
-    }
-    catch {
-        Write-Host "Erreur: $_" -ForegroundColor Red
-    }
-    finally {
-        # ------------------------------------------------------------------
-        # LIBERATION DES RESSOURCES COM
-        # ------------------------------------------------------------------
-        # Important pour éviter les fuites mémoire et processus fantômes
-        # ------------------------------------------------------------------
-        if ($Excel) {
-            try { $Excel.Quit() } catch { }
-            try { [System.Runtime.Interopservices.Marshal]::ReleaseComObject($Excel) | Out-Null } catch { }
+            if ($Sheet) {
+                # --------------------------------------------------------------
+                # EXTRACTION DES DONNEES
+                # --------------------------------------------------------------
+                $UsedRange = $Sheet.UsedRange
+                $ColCount = $UsedRange.Columns.Count
+
+                $result = @{
+                    Data = $UsedRange.Value2
+                    Rows = $UsedRange.Rows.Count
+                    Cols = $ColCount
+                }
+            }
+
+            $Workbook.Close($false)
         }
-        [System.GC]::Collect()
-        Start-Sleep -Milliseconds 500
+        catch {
+            if ($attempt -eq $MaxRetries) {
+                Write-Host "Erreur finale: $_" -ForegroundColor Red
+            } else {
+                Write-Host "Erreur (retry...): $_" -ForegroundColor DarkYellow -NoNewline
+            }
+        }
+        finally {
+            # ------------------------------------------------------------------
+            # LIBERATION DE TOUS LES OBJETS COM (IMPORTANT!)
+            # ------------------------------------------------------------------
+            if ($UsedRange) {
+                try { [System.Runtime.Interopservices.Marshal]::ReleaseComObject($UsedRange) | Out-Null } catch { }
+                $UsedRange = $null
+            }
+            if ($Sheet) {
+                try { [System.Runtime.Interopservices.Marshal]::ReleaseComObject($Sheet) | Out-Null } catch { }
+                $Sheet = $null
+            }
+            if ($Worksheets) {
+                try { [System.Runtime.Interopservices.Marshal]::ReleaseComObject($Worksheets) | Out-Null } catch { }
+                $Worksheets = $null
+            }
+            if ($Workbook) {
+                try { $Workbook.Close($false) } catch { }
+                try { [System.Runtime.Interopservices.Marshal]::ReleaseComObject($Workbook) | Out-Null } catch { }
+                $Workbook = $null
+            }
+            if ($Excel) {
+                try { $Excel.Quit() } catch { }
+                try { [System.Runtime.Interopservices.Marshal]::ReleaseComObject($Excel) | Out-Null } catch { }
+                $Excel = $null
+            }
+            [System.GC]::Collect()
+            [System.GC]::WaitForPendingFinalizers()
+            [System.GC]::Collect()
+            Start-Sleep -Seconds 2
+        }
     }
 
     return $result
@@ -150,35 +179,17 @@ function Read-ExcelFile {
 # BOUCLE DE LECTURE DES FICHIERS SOURCES
 # ==============================================================================
 # Parcourt chaque fichier Excel et extrait les données de l'onglet
-# Le premier fichier sert de référence pour le formatage
 # ==============================================================================
-$isFirst = $true
 foreach ($sourceFile in $Sources) {
     $fileName = Split-Path $sourceFile -Leaf
     Write-Host "Lecture de $fileName..." -ForegroundColor Yellow -NoNewline
 
-    # --------------------------------------------------------------------------
-    # LECTURE AVEC OU SANS CAPTURE DU FORMATAGE
-    # --------------------------------------------------------------------------
-    # Premier fichier : capture le formatage pour le reproduire dans la fusion
-    # Fichiers suivants : lecture des données uniquement
-    # --------------------------------------------------------------------------
-    if ($isFirst) {
-        $result = Read-ExcelFile -FilePath $sourceFile -CaptureFormatting
-        if ($result -and $result.Formatting) {
-            $SourceFormatting = $result.Formatting
-            Write-Host " (formatage capturé)" -ForegroundColor Magenta -NoNewline
-        }
-        $isFirst = $false
-    } else {
-        $result = Read-ExcelFile -FilePath $sourceFile
-    }
+    $result = Read-ExcelFile -FilePath $sourceFile
 
     if ($null -eq $result) {
         Write-Host " Onglet non trouvé" -ForegroundColor DarkYellow
         continue
     }
-    Write-Host "Lecture de 2..." -ForegroundColor Yellow -NoNewline
     $Data = $result.Data
     $RowCount = $result.Rows
     $ColCount = $result.Cols
@@ -319,34 +330,19 @@ try {
     $Range.Value2 = $OutputData
 
     # ==========================================================================
-    # APPLICATION DU FORMATAGE SOURCE
+    # APPLICATION DU FORMATAGE
     # ==========================================================================
-    # Reproduit exactement le formatage du premier fichier lu
-    # ==========================================================================
-    if ($SourceFormatting) {
-        Write-Host "Application du formatage source..." -ForegroundColor Yellow
-        Write-Host "Formats capturés:" -ForegroundColor Cyan
+    Write-Host "Application du formatage..." -ForegroundColor Yellow
 
-        # ----------------------------------------------------------------------
-        # HAUTEUR DE LIGNE DES EN-TETES
-        # ----------------------------------------------------------------------
-        if ($SourceFormatting.HeaderRowHeight) {
-            $Sheet.Rows.Item(1).RowHeight = $SourceFormatting.HeaderRowHeight
-        }
-        # ----------------------------------------------------------------------
-        # ACTIVATION DE L'AUTOFILTER SI PRESENT DANS LA SOURCE
-        # ----------------------------------------------------------------------
-        if ($SourceFormatting.HasAutoFilter) {
-            $Sheet.Range("A1:$($lastCol)1").AutoFilter() | Out-Null
-        }
-    } else {
-        # ----------------------------------------------------------------------
-        # FORMATAGE PAR DEFAUT (si pas de source)
-        # ----------------------------------------------------------------------
-        $Sheet.Range("A1:$($lastCol)1").Font.Bold = $true
-        $Sheet.Range("A1:$($lastCol)1").Interior.ColorIndex = 15
-        $Sheet.UsedRange.Columns.AutoFit() | Out-Null
-    }
+    # Formatage de l'en-tête
+    $Sheet.Range("A1:$($lastCol)1").Font.Bold = $true
+    $Sheet.Range("A1:$($lastCol)1").Interior.ColorIndex = 15
+
+    # Format dd/mm/yyyy pour la première colonne (dates)
+    $Sheet.Range("A2:A$($dataCount + 1)").NumberFormat = "dd/mm/yyyy"
+
+    # AutoFit des colonnes
+    $Sheet.UsedRange.Columns.AutoFit() | Out-Null
 
     # ==========================================================================
     # CREATION DE L'ONGLET METADATA

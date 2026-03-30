@@ -110,7 +110,7 @@ try {
     $Sheet.Name = "Objets de gestion"
 
     # Préparer données en bloc (plus rapide)
-    $rowCount = $AllData.Count + 1
+    $rowCount = $AllData.Count + 1++
     $colCount = $Headers.Count
     $OutputData = New-Object 'object[,]' $rowCount, $colCount
 
