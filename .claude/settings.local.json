@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(taskkill:*)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\amami\\\\GitHub\\\\merge\\\\mergefinal.ps1\")"
+    ]
+  }
+}

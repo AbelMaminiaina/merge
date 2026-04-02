@@ -25,6 +25,7 @@ param(
 $TableName       = "ref_obj_gestion"
 $SheetName       = "Objets de gestion"
 $SqlFileName     = "import_vertica.sql"
+$CsvFileName     = "import_vertica_data.csv"
 $DbVisCmdPath    = "C:\Program Files\DbVisualizer\dbviscmd.bat"
 $DbVisConnection = "vertica-NI"
 
@@ -44,6 +45,58 @@ function Format-VerticaDate {
     param($DateValue)
     if ($null -eq $DateValue) { return "NULL" }
     return "'" + $DateValue.ToString("yyyy-MM-dd HH:mm:ss") + "'"
+}
+
+function Escape-CsvValue {
+    param([string]$Value)
+    if ([string]::IsNullOrEmpty($Value)) { return "" }
+    # Echapper les guillemets et entourer de guillemets si necessaire
+    if ($Value -match '[",\r\n]') {
+        return '"' + ($Value -replace '"', '""') + '"'
+    }
+    return $Value
+}
+
+function Export-ToCsv {
+    param(
+        [array]$Data,
+        [string]$FilePath
+    )
+
+    Write-Host "Generation du fichier CSV ($($Data.Count) lignes)..." -ForegroundColor Cyan
+
+    $csvContent = [System.Text.StringBuilder]::new()
+
+    # En-tete CSV
+    [void]$csvContent.AppendLine("Date,Used,NomFr,Definition,NomEn,Trigramme,NomFichierExcel")
+
+    $count = 0
+    foreach ($item in $Data) {
+        $dateStr = if ($null -ne $item.Date) { $item.Date.ToString("yyyy-MM-dd HH:mm:ss") } else { "" }
+
+        $line = @(
+            $dateStr,
+            (Escape-CsvValue $item.Used),
+            (Escape-CsvValue $item.NomFr),
+            (Escape-CsvValue $item.Definition),
+            (Escape-CsvValue $item.NomEn),
+            (Escape-CsvValue $item.Trigramme),
+            (Escape-CsvValue $item.NomFichierExcel)
+        ) -join ","
+
+        [void]$csvContent.AppendLine($line)
+
+        $count++
+        if ($count % 50000 -eq 0) {
+            Write-Host "  $count lignes generees..." -ForegroundColor Gray
+        }
+    }
+
+    # UTF-8 sans BOM
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($FilePath, $csvContent.ToString(), $utf8NoBom)
+
+    Write-Host "  -> $FilePath" -ForegroundColor Green
 }
 
 function Read-ExcelData {
@@ -156,15 +209,19 @@ function Read-ExcelData {
 
 function Export-ToSql {
     param(
-        [array]$Data,
-        [string]$FilePath
+        [string]$FilePath,
+        [string]$CsvFilePath,
+        [int]$DataCount
     )
+
+    Write-Host "Generation du script SQL (COPY FROM LOCAL)..." -ForegroundColor Cyan
 
     $sqlContent = [System.Text.StringBuilder]::new()
 
-    [void]$sqlContent.AppendLine("-- Script d'import pour Vertica")
+    [void]$sqlContent.AppendLine("-- Script d'import pour Vertica (optimise pour gros volumes)")
     [void]$sqlContent.AppendLine("-- Genere le $(Get-Date -Format 'dd/MM/yyyy HH:mm:ss')")
-    [void]$sqlContent.AppendLine("-- Total: $($Data.Count) enregistrements")
+    [void]$sqlContent.AppendLine("-- Total: $DataCount enregistrements")
+    [void]$sqlContent.AppendLine("-- Methode: COPY FROM LOCAL (beaucoup plus rapide que INSERT)")
     [void]$sqlContent.AppendLine("")
     [void]$sqlContent.AppendLine("-- Creation de la table (si elle n'existe pas)")
     [void]$sqlContent.AppendLine("CREATE TABLE IF NOT EXISTS $TableName (")
@@ -182,41 +239,30 @@ function Export-ToSql {
     [void]$sqlContent.AppendLine("-- Vider la table avant insertion")
     [void]$sqlContent.AppendLine("TRUNCATE TABLE $TableName;")
     [void]$sqlContent.AppendLine("")
-    [void]$sqlContent.AppendLine("-- Insertion des donnees")
-
-    $batchSize = 100
-    $count     = 0
-
-    foreach ($item in $Data) {
-        $dateVal  = Format-VerticaDate -DateValue $item.Date
-        $usedVal  = Escape-SqlString   -Value $item.Used
-        $nomFrVal = Escape-SqlString   -Value $item.NomFr
-        $defVal   = Escape-SqlString   -Value $item.Definition
-        $nomEnVal = Escape-SqlString   -Value $item.NomEn
-        $triVal   = Escape-SqlString   -Value $item.Trigramme
-        $fileVal  = Escape-SqlString   -Value $item.NomFichierExcel
-
-        [void]$sqlContent.AppendLine("INSERT INTO $TableName (Date, Used, NomFr, Definition, NomEn, Trigramme, NomFichierExcel)")
-        [void]$sqlContent.AppendLine("VALUES ($dateVal, $usedVal, $nomFrVal, $defVal, $nomEnVal, $triVal, $fileVal);")
-
-        $count++
-        if ($count % $batchSize -eq 0) {
-            [void]$sqlContent.AppendLine("")
-            [void]$sqlContent.AppendLine("-- $count enregistrements inseres...")
-            [void]$sqlContent.AppendLine("COMMIT;")
-            [void]$sqlContent.AppendLine("")
-        }
-    }
-
+    [void]$sqlContent.AppendLine("-- Chargement des donnees depuis le fichier CSV")
+    [void]$sqlContent.AppendLine("-- IMPORTANT: Le fichier CSV doit etre dans le meme dossier que ce script")
+    [void]$sqlContent.AppendLine("COPY $TableName (Date, Used, NomFr, Definition, NomEn, Trigramme, NomFichierExcel)")
+    [void]$sqlContent.AppendLine("FROM LOCAL '$CsvFilePath'")
+    [void]$sqlContent.AppendLine("DELIMITER ','")
+    [void]$sqlContent.AppendLine("ENCLOSED BY '""'")
+    [void]$sqlContent.AppendLine("SKIP 1")
+    [void]$sqlContent.AppendLine("NULL ''")
+    [void]$sqlContent.AppendLine("REJECTED DATA AS TABLE ${TableName}_rejects")
+    [void]$sqlContent.AppendLine("EXCEPTIONS AS TABLE ${TableName}_exceptions;")
     [void]$sqlContent.AppendLine("")
     [void]$sqlContent.AppendLine("COMMIT;")
     [void]$sqlContent.AppendLine("")
     [void]$sqlContent.AppendLine("-- Verification")
     [void]$sqlContent.AppendLine("SELECT COUNT(*) AS total_records FROM $TableName;")
+    [void]$sqlContent.AppendLine("")
+    [void]$sqlContent.AppendLine("-- Verifier les rejets (si erreurs)")
+    [void]$sqlContent.AppendLine("-- SELECT * FROM ${TableName}_rejects;")
 
-    # UTF-8 sans BOM pour meilleure compatibilite
+    # UTF-8 sans BOM
     $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
     [System.IO.File]::WriteAllText($FilePath, $sqlContent.ToString(), $utf8NoBom)
+
+    Write-Host "  -> $FilePath" -ForegroundColor Green
 }
 
 function Invoke-DbVisCmd {
@@ -233,9 +279,10 @@ function Invoke-DbVisCmd {
         Write-Host "Pour importer manuellement dans Vertica:" -ForegroundColor Yellow
         Write-Host "  1. Ouvrez DbVisualizer" -ForegroundColor White
         Write-Host "  2. Connectez-vous a $DbVisConnection" -ForegroundColor White
-        Write-Host "  3. Ouvrez le fichier: $SqlFilePath" -ForegroundColor White
-        Write-Host "     (Verifiez que l'encodage est UTF-8 dans File > Open)" -ForegroundColor Gray
-        Write-Host "  4. Executez le script (F5 ou Ctrl+Enter)" -ForegroundColor White
+        Write-Host "  3. Ouvrez le fichier SQL: $SqlFilePath" -ForegroundColor White
+        Write-Host "  4. Verifiez que le fichier CSV est accessible:" -ForegroundColor White
+        Write-Host "     $(Join-Path $OutputPath $CsvFileName)" -ForegroundColor Gray
+        Write-Host "  5. Executez le script (F5 ou Ctrl+Enter)" -ForegroundColor White
         return
     }
 
@@ -306,11 +353,15 @@ Write-Host "Total enregistrements: $($allData.Count)" -ForegroundColor White
 Write-Host ""
 
 if ($allData.Count -gt 0) {
-    $sqlPath = Join-Path $OutputPath $SqlFileName
-    Write-Host "Generation du script SQL..." -ForegroundColor Cyan
-    Export-ToSql -Data $allData -FilePath $sqlPath
-    Write-Host "  -> $sqlPath" -ForegroundColor Green
+    # Generer le fichier CSV
+    $csvPath = Join-Path $OutputPath $CsvFileName
+    Export-ToCsv -Data $allData -FilePath $csvPath
 
+    # Generer le script SQL avec COPY FROM LOCAL
+    $sqlPath = Join-Path $OutputPath $SqlFileName
+    Export-ToSql -FilePath $sqlPath -CsvFilePath $csvPath -DataCount $allData.Count
+
+    # Executer via DbVisualizer
     Invoke-DbVisCmd -SqlFilePath $sqlPath
 }
 
