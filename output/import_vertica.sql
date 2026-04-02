@@ -1,5 +1,5 @@
-﻿-- Script d'import pour Vertica
--- Genere le 02/04/2026 02:12:38
+-- Script d'import pour Vertica
+-- Genere le 02/04/2026 20:47:32
 -- Total: 29 enregistrements
 
 -- Creation de la table (si elle n'existe pas)

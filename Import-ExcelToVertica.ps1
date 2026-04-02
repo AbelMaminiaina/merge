@@ -214,7 +214,9 @@ function Export-ToSql {
     [void]$sqlContent.AppendLine("-- Verification")
     [void]$sqlContent.AppendLine("SELECT COUNT(*) AS total_records FROM $TableName;")
 
-    [System.IO.File]::WriteAllText($FilePath, $sqlContent.ToString(), [System.Text.Encoding]::UTF8)
+    # UTF-8 sans BOM pour meilleure compatibilite
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($FilePath, $sqlContent.ToString(), $utf8NoBom)
 }
 
 function Invoke-DbVisCmd {
@@ -232,16 +234,18 @@ function Invoke-DbVisCmd {
         Write-Host "  1. Ouvrez DbVisualizer" -ForegroundColor White
         Write-Host "  2. Connectez-vous a $DbVisConnection" -ForegroundColor White
         Write-Host "  3. Ouvrez le fichier: $SqlFilePath" -ForegroundColor White
+        Write-Host "     (Verifiez que l'encodage est UTF-8 dans File > Open)" -ForegroundColor Gray
         Write-Host "  4. Executez le script (F5 ou Ctrl+Enter)" -ForegroundColor White
         return
     }
 
     Write-Host "Connexion  : $DbVisConnection" -ForegroundColor White
     Write-Host "Script SQL : $SqlFilePath" -ForegroundColor White
+    Write-Host "Encodage   : UTF-8" -ForegroundColor White
     Write-Host ""
     Write-Host "Execution en cours..." -ForegroundColor Yellow
 
-    & $DbVisCmdPath -connection $DbVisConnection -script $SqlFilePath
+    & $DbVisCmdPath -connection $DbVisConnection -sqlfile $SqlFilePath -encoding UTF-8
 
     if ($LASTEXITCODE -eq 0) {
         Write-Host ""
