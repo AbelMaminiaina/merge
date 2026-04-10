@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBIQ — Portail Qualité Données</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+/* =============================================
+   IBIQ — Portail Qualité Données
+   Feuille de style principale
+   ============================================= */
+
+/* --- VARIABLES --- */
+:root {
+  --bg:         #f3f4f6;
+  --surface:    #ffffff;
+  --surface2:   #e9ebee;
+  --border:     #d1d5db;
+  --accent:     #1a4f8a;
+  --accent2:    #2563eb;
+  --accent3:    #059669;
+  --text:       #1f2937;
+  --text-muted: #6b7280;
+  --ppt:        #C43E1C;
+  --word:       #1a56aa;
+  --app:        #059669;
+  --wiki:       #7c3aed;
+}
+
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--accent);
+}
+.logo span { color: var(--text); }
+
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.team-badge {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 50%, #e0e7ff 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 2rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: 'IBIQ';
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  font-family: 'Syne', sans-serif;
+  font-size: 180px;
+  font-weight: 800;
+  color: rgba(26, 79, 138, 0.05);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.hero-left h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: .5rem;
+}
+.hero-left h1 span { color: var(--accent); }
+
+.hero-left p {
+  color: var(--text-muted);
+  font-size: .9rem;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.refs {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.ref-chip {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+.ref-chip a {
+  color: var(--accent2);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* =============================================
+   ACTUALITÉS
+   ============================================= */
+.news-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+
+.news-box h3 {
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: .8rem;
+}
+
+.news-item {
+  display: flex;
+  gap: .8rem;
+  align-items: flex-start;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.news-item:last-child { border-bottom: none; }
+
+.news-date {
+  font-size: .7rem;
+  color: var(--accent);
+  white-space: nowrap;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.news-text {
+  font-size: .8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* =============================================
+   MAIN / LAYOUT
+   ============================================= */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* =============================================
+   SECTIONS
+   ============================================= */
+section { margin-bottom: 2.5rem; }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -.3px;
+}
+
+.section-refs {
+  margin-left: auto;
+  font-size: .72rem;
+  color: var(--text-muted);
+}
+
+/* =============================================
+   CARTES
+   ============================================= */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .9rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .2s, background .2s, transform .15s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .02), transparent);
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.card:hover {
+  border-color: rgba(26, 79, 138, .4);
+  background: #f0f4ff;
+  transform: translateY(-2px);
+}
+.card:hover::after { opacity: 1; }
+
+/* Icônes de carte */
+.card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-family: 'Syne', sans-serif;
+}
+
+.icon-ppt  { background: rgba(196, 62, 28, .1);  color: var(--ppt);  border: 1px solid rgba(196, 62, 28, .25); }
+.icon-word { background: rgba(26, 86, 170, .1);  color: var(--word); border: 1px solid rgba(26, 86, 170, .25); }
+.icon-app  { background: rgba(5, 150, 105, .1);  color: var(--app);  border: 1px solid rgba(5, 150, 105, .25); }
+.icon-wiki { background: rgba(124, 58, 237, .1); color: var(--wiki); border: 1px solid rgba(124, 58, 237, .25); }
+.icon-vid  { background: rgba(220, 38, 38, .1);  color: #dc2626;     border: 1px solid rgba(220, 38, 38, .25); }
+
+/* Contenu de carte */
+.card-body { flex: 1; min-width: 0; }
+
+.card-title {
+  font-size: .88rem;
+  font-weight: 600;
+  margin-bottom: .25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-desc {
+  font-size: .75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Badges de type */
+.type-badge {
+  position: absolute;
+  top: .7rem;
+  right: .8rem;
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.badge-ppt  { background: rgba(196, 62, 28, .12);  color: var(--ppt); }
+.badge-word { background: rgba(26, 86, 170, .12);  color: var(--word); }
+.badge-app  { background: rgba(5, 150, 105, .12);  color: var(--app); }
+.badge-wiki { background: rgba(124, 58, 237, .12); color: var(--wiki); }
+.badge-vid  { background: rgba(220, 38, 38, .12);  color: #dc2626; }
+.badge-obs  { background: rgba(100, 100, 100, .1); color: #9ca3af; }
+
+/* Carte obsolète */
+.card.obsolete { opacity: .45; }
+.card.obsolete:hover { opacity: .7; border-color: var(--border); }
+
+/* =============================================
+   LÉGENDE
+   ============================================= */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 2rem;
+  padding: .9rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* =============================================
+   ONGLETS GRANDES PARTIES
+   ============================================= */
+.parts-nav {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0;
+}
+
+.part-tab {
+  padding: .6rem 1.2rem;
+  font-family: 'Syne', sans-serif;
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  background: none;
+  transition: color .2s, background .2s;
+  position: relative;
+  bottom: -2px;
+}
+
+.part-tab:hover {
+  color: var(--accent);
+  background: var(--surface2);
+}
+
+.part-tab.active {
+  color: var(--accent);
+  background: var(--surface);
+  border-color: var(--border);
+  border-bottom-color: var(--surface);
+}
+
+.part-panel { display: none; }
+.part-panel.active { display: block; }
+
+.part-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.part-header-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.part-header-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.part-header-desc {
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-top: .15rem;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero::before { display: none; }
+  main { padding: 1rem; }
+  .card-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">IBI<span>Q</span></div>
+        <div class="header-meta">
+            <div class="team-badge">Équipe A340</div>
+            <span>Qualité des Données</span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-grid">
+            <div class="hero-left">
+                <h1>Portail <span>IBIQ</span><br>Qualité des données</h1>
+                <p>Périmètre : qualité des données, contrôles automatiques et data lineage.
+                   Retrouvez ici tous les outils, documents et applications du projet.</p>
+                <div class="refs">
+                    <span class="ref-chip">Référents : <a href="#">Q. Zimmermann</a></span>
+                    <span class="ref-chip"><a href="#">A. Mamecier</a></span>
+                    <span class="ref-chip"><a href="#">A. Mazier</a></span>
+                </div>
+            </div>
+            <div class="news-box">
+                <h3>📢 Actualités</h3>
+                <div class="news-item">
+                    <span class="news-date">29/08/2024</span>
+                    <span class="news-text">Initialisation du projet POD</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">04/06/2024</span>
+                    <span class="news-text">Nouvelle SFD : Comment remplir la partie F5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- POD — TOUJOURS VISIBLE -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.3)">🗂️</div>
+                <div class="section-title">POD — Portail Organisation Données</div>
+            </div>
+            <div class="card-grid">
+                <a class="card" href="#">
+                    <div class="card-icon icon-ppt">P</div>
+                    <div class="card-body">
+                        <div class="card-title">Présentation projet</div>
+                        <div class="card-desc">Les enjeux du projet, son historique et ses objectifs</div>
+                    </div>
+                    <span class="type-badge badge-ppt">PPT</span>
+                </a>
+                <a class="card" href="#">
+                    <div class="card-icon icon-wiki">W</div>
+                    <div class="card-body">
+                        <div class="card-title">POD — Principe et utilisation</div>
+                        <div class="card-desc">Guide d'utilisation du portail organisation données</div>
+                    </div>
+                    <span class="type-badge badge-wiki">WIKI</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- LÉGENDE -->
+        <div class="legend">
+            <span style="font-size:.75rem;font-weight:600;color:var(--text-muted);margin-right:.5rem;">Types :</span>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--ppt)"></div> PowerPoint</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--word)"></div> Word / Document</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--app)"></div> Application</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--wiki)"></div> Wiki / Page</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Vidéo</div>
+        </div>
+
+        <!-- ONGLETS 3 GRANDES PARTIES -->
+        <div class="parts-nav">
+            <button class="part-tab active" data-target="part-projet">📁 Projet</button>
+            <button class="part-tab" data-target="part-applications">⚙️ Applications</button>
+            <button class="part-tab" data-target="part-documentation">📚 Documentation</button>
+        </div>
+
+        <!-- ══════════════════════════════════════
+             PARTIE 1 — PROJET (POD + QDD)
+             ══════════════════════════════════════ -->
+        <div class="part-panel active" id="part-projet">
+
+            <div class="part-header">
+                <div class="part-header-icon">📁</div>
+                <div>
+                    <div class="part-header-title">Projet</div>
+                    <div class="part-header-desc">Feuille de route et organisation du projet QDD</div>
+                </div>
+            </div>
+
+            <!-- FEUILLE DE ROUTE QDD -->
+            <section>
+                <div class="section-header">
+                    <div class="section-icon" style="background:rgba(208,74,2,.12);border:1px solid rgba(208,74,2,.3)">📊</div>
+                    <div class="section-title">Feuille de route QDD</div>
+                </div>
+                <div class="card-grid">
+                    <a class="card obsolete" href="#">
+                        <div class="card-icon icon-ppt">P</div>
+                        <div class="card-body">
+                            <div class="card-title">Vision Macro</div>
+                            <div class="card-desc">Vue d'ensemble macro de la feuille de route</div>
+                        </div>
+                        <span class="type-badge badge-obs">OBSOLÈTE</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ══════════════════════════════════════
+             PARTIE 2 — APPLICATIONS (SIMC + MAYA + KPI)
+             ══════════════════════════════════════ -->
+        <div class="part-panel" id="part-applications">
+
+            <div class="part-header">
+                <div class="part-header-icon">⚙️</div>
+                <div>
+                    <div class="part-header-title">Applications</div>
+                    <div class="part-header-desc">Outils de contrôle, revue de code et indicateurs</div>
+                </div>
+            </div>
+
+            <!-- SIMC -->
+            <section>
+                <div class="section-header">
+                    <div class="section-icon" style="background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3)">🏭</div>
+                    <div class="section-title">Contrôler ses données — SIMC</div>
+                    <div class="section-refs">Réf. : A. Mazier · A. Mamecier · Y. Mourelon</div>
+                </div>
+                <div class="card-grid">
+                    <a class="card" href="#">
+                        <div class="card-icon icon-app">⚙</div>
+                        <div class="card-body">
+                            <div class="card-title">Rapport BD KPI UoC</div>
+                            <div class="card-desc">Tableau de bord des indicateurs clés de qualité</div>
+                        </div>
+                        <span class="type-badge badge-app">APP</span>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card-icon icon-app">🏭</div>
+                        <div class="card-body">
+                            <div class="card-title">SIMC (Usine à Contrôle)</div>
+                            <div class="card-desc">Accès à l'application de contrôle automatique des données</div>
+                        </div>
+                        <span class="type-badge badge-app">APP</span>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card-icon icon-ppt">P</div>
+                        <div class="card-body">
+                            <div class="card-title">Présentation Générale</div>
+                            <div class="card-desc">Synthèse des attendus ACM, blocs développés, interactions projets</div>
+                        </div>
+                        <span class="type-badge badge-ppt">PPT</span>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card-icon icon-word">W</div>
+                        <div class="card-body">
+                            <div class="card-title">SFD — Remplir la fonction F5</div>
+                            <div class="card-desc">Guide pour compléter la spécification fonctionnelle détaillée</div>
+                        </div>
+                        <span class="type-badge badge-word">WORD</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- MAYA -->
+            <section>
+                <div class="section-header">
+                    <div class="section-icon" style="background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3)">🔍</div>
+                    <div class="section-title">MAYA — Revue de code</div>
+                </div>
+                <div class="card-grid">
+                    <a class="card" href="#">
+                        <div class="card-icon icon-app">🧑‍💻</div>
+                        <div class="card-body">
+                            <div class="card-title">MAYA — Utilitaire de revue de code</div>
+                            <div class="card-desc">Outil d'analyse et de revue automatisée du code</div>
+                        </div>
+                        <span class="type-badge badge-app">APP</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ══════════════════════════════════════
+             PARTIE 3 — DOCUMENTATION (MPD + META + Lignage)
+             ══════════════════════════════════════ -->
+        <div class="part-panel" id="part-documentation">
+
+            <div class="part-header">
+                <div class="part-header-icon">📚</div>
+                <div>
+                    <div class="part-header-title">Documentation</div>
+                    <div class="part-header-desc">Modèles de données, dictionnaire META et lignage</div>
+                </div>
+            </div>
+
+            <!-- MPD -->
+            <section>
+                <div class="section-header">
+                    <div class="section-icon" style="background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.3)">📐</div>
+                    <div class="section-title">Documenter son modèle de données</div>
+                </div>
+                <div class="card-grid">
+                    <a class="card" href="#">
+                        <div class="card-icon icon-wiki">W</div>
+                        <div class="card-body">
+                            <div class="card-title">Créer son MPD depuis les tables</div>
+                            <div class="card-desc">Procédure de création du modèle physique de données</div>
+                        </div>
+                        <span class="type-badge badge-wiki">WIKI</span>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card-icon icon-vid">▶</div>
+                        <div class="card-body">
+                            <div class="card-title">Tutoriel vidéo — Projet PowerDesigner</div>
+                            <div class="card-desc">Prise en main et utilisation de PowerDesigner</div>
+                        </div>
+                        <span class="type-badge badge-vid">VIDÉO</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- META -->
+            <section>
+                <div class="section-header">
+                    <div class="section-icon" style="background:rgba(232,168,56,.12);border:1px solid rgba(232,168,56,.3)">🔖</div>
+                    <div class="section-title">META — Dictionnaire de données</div>
+                    <div class="section-refs">Réf. : A. Mazier · A. Mamecier · H. Charlot</div>
+                </div>
+                <div class="card-grid">
+                    <a class="card" href="#">
+                        <div class="card-icon icon-wiki">W</div>
+                        <div class="card-body">
+                            <div class="card-title">MPD vers META</div>
+                            <div class="card-desc">Procédure d'alimentation du dictionnaire depuis le MPD</div>
+                        </div>
+                        <span class="type-badge badge-wiki">WIKI</span>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card-icon icon-wiki">W</div>
+                        <div class="card-body">
+                            <div class="card-title">Utilisation du dictionnaire META</div>
+                            <div class="card-desc">Guide d'utilisation et de consultation du dictionnaire</div>
+                        </div>
+                        <span class="type-badge badge-wiki">WIKI</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- LIGNAGE -->
+            <section>
+                <div class="section-header">
+                    <div class="section-icon" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.3)">🔗</div>
+                    <div class="section-title">Lignage de données</div>
+                </div>
+                <div class="card-grid">
+                    <a class="card" href="#">
+                        <div class="card-icon icon-wiki">W</div>
+                        <div class="card-body">
+                            <div class="card-title">Lignage de données</div>
+                            <div class="card-desc">Documentation et traçabilité du cycle de vie des données</div>
+                        </div>
+                        <span class="type-badge badge-wiki">WIKI</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+        <!-- FIN PANNEAUX -->
+
+    </main>
+
+    <footer>
+        IBIQ · Équipe A340 · Portail Qualité des Données — Dernière mise à jour 29/08/2024
+    </footer>
+
+
+
+
+    <script>
+/* =============================================
+   IBIQ — Portail Qualité Données
+   Script principal
+   ============================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* --- Onglets grandes parties --- */
+  const tabs = document.querySelectorAll('.part-tab');
+  const panels = document.querySelectorAll('.part-panel');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      // Désactiver tout
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      // Activer l'onglet cliqué
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.target);
+      if (target) target.classList.add('active');
+    });
+  });
+
+  /* --- Ouverture des liens dans un nouvel onglet --- */
+  const cards = document.querySelectorAll('.card[href]');
+  cards.forEach(function (card) {
+    const href = card.getAttribute('href');
+    if (href && href !== '#') {
+      card.setAttribute('target', '_blank');
+      card.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  /* --- Animation d'apparition au scroll --- */
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('section--visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(s => observer.observe(s));
+
+});
+    </script>
+</body>
+</html>
