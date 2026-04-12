@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr" style="scroll-behavior:smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>IBIQ — Portail Qualité Données</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body style="font-family:'DM Sans',sans-serif;background:#f3f4f6;color:#1f2937;min-height:100vh;margin:0">
+
+    <!-- HEADER -->
+    <header style="position:sticky;top:0;z-index:100;background:#ffffffe8;backdrop-filter:blur(12px);border-bottom:1px solid #d1d5db;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:60px">
+        <div style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;letter-spacing:-1px;color:#1a4f8a">IBI<span style="color:#1f2937">Q</span></div>
+        <div style="display:flex;align-items:center;gap:24px;font-size:13px;color:#6b7280">
+            <div style="background:#1a4f8a;padding:4px 12px;border-radius:20px;font-weight:600;color:#fff">Équipe A340</div>
+            <span>Qualité des Données</span>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav style="position:sticky;top:60px;z-index:90;background:#ffffffe8;backdrop-filter:blur(12px);border-bottom:1px solid #d1d5db;padding:0 32px;display:flex;align-items:center;gap:4px;height:48px">
+        <a href="#pod" style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;color:#1a4f8a;background:#e8f0f8;text-decoration:none;white-space:nowrap">🗂️ POD</a>
+        <div style="width:1px;height:20px;background:#d1d5db;margin:0 8px"></div>
+        <a href="#projet" style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;color:#6b7280;text-decoration:none;white-space:nowrap">📁 Projet</a>
+        <a href="#apps" style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;color:#6b7280;text-decoration:none;white-space:nowrap">⚙️ Applications</a>
+        <a href="#docs" style="display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;color:#6b7280;text-decoration:none;white-space:nowrap">📚 Documentation</a>
+    </nav>
+
+    <!-- HERO -->
+    <div style="background:linear-gradient(135deg,#dbeafe,#eff6ff 50%,#e0e7ff);border-bottom:1px solid #d1d5db;padding:48px 32px 40px;overflow:hidden">
+        <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
+            <div>
+                <h1 style="font-family:'Syne',sans-serif;font-size:35px;font-weight:800;line-height:1.1;margin:0 0 8px">Portail <span style="color:#1a4f8a">IBIQ</span><br>Qualité des données</h1>
+                <p style="color:#6b7280;font-size:14px;line-height:1.6;max-width:480px;margin:0">Périmètre : qualité des données, contrôles automatiques et data lineage. Retrouvez ici tous les outils, documents et applications du projet.</p>
+                <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px">
+                    <span style="background:#e9ebee;border:1px solid #d1d5db;padding:3px 10px;border-radius:20px;font-size:12px;color:#6b7280">Référents : <a href="#">Q. Zimmermann</a></span>
+                    <span style="background:#e9ebee;border:1px solid #d1d5db;padding:3px 10px;border-radius:20px;font-size:12px;color:#6b7280"><a href="#">A. Mamecier</a></span>
+                    <span style="background:#e9ebee;border:1px solid #d1d5db;padding:3px 10px;border-radius:20px;font-size:12px;color:#6b7280"><a href="#">A. Mazier</a></span>
+                </div>
+            </div>
+            <div style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:19px">
+                <h3 style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:#6b7280;margin:0 0 13px">📢 Actualités</h3>
+                <div style="display:flex;gap:13px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #d1d5db">
+                    <span style="font-size:11px;color:#1a4f8a;white-space:nowrap;font-weight:600;margin-top:2px">29/08/2024</span>
+                    <span style="font-size:13px;color:#6b7280;line-height:1.4">Initialisation du projet POD</span>
+                </div>
+                <div style="display:flex;gap:13px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #d1d5db">
+                    <span style="font-size:11px;color:#1a4f8a;white-space:nowrap;font-weight:600;margin-top:2px">04/06/2024</span>
+                    <span style="font-size:13px;color:#6b7280;line-height:1.4">Nouvelle SFD : Comment remplir la partie F5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main style="max-width:1200px;margin:0 auto;padding:32px">
+
+        <!-- LÉGENDE -->
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px;padding:14px 19px;background:#fff;border:1px solid #d1d5db;border-radius:10px">
+            <span style="font-size:12px;font-weight:600;color:#6b7280;margin-right:8px">Types :</span>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#6b7280"><div style="width:8px;height:8px;border-radius:50%;background:#C43E1C"></div> PowerPoint</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#6b7280"><div style="width:8px;height:8px;border-radius:50%;background:#1a56aa"></div> Word / Document</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#6b7280"><div style="width:8px;height:8px;border-radius:50%;background:#059669"></div> Application</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#6b7280"><div style="width:8px;height:8px;border-radius:50%;background:#7c3aed"></div> Wiki / Page</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#6b7280"><div style="width:8px;height:8px;border-radius:50%;background:#ef4444"></div> Vidéo</div>
+        </div>
+
+        <!-- POD -->
+        <div id="pod" style="margin-bottom:56px;scroll-margin-top:115px">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:24px;padding:14px 19px;background:#1a4f8a;border-radius:10px;color:#fff">
+                <div style="font-size:22px;line-height:1">🗂️</div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800">POD — Portail Organisation Données</div>
+                    <div style="font-size:12px;opacity:0.8;margin-top:2px">Toujours accessible — point d'entrée du projet</div>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                    <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#fce9e5;color:#C43E1C;border:1px solid #f0c4bb">P</div>
+                    <div style="flex:1;min-width:0">
+                        <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Présentation projet</div>
+                        <div style="font-size:12px;color:#6b7280;line-height:1.4">Les enjeux du projet, son historique et ses objectifs</div>
+                    </div>
+                    <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#fce9e5;color:#C43E1C">PPT</span>
+                </a>
+                <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                    <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#f3e8ff;color:#7c3aed;border:1px solid #ddd6fe">W</div>
+                    <div style="flex:1;min-width:0">
+                        <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">POD — Principe et utilisation</div>
+                        <div style="font-size:12px;color:#6b7280;line-height:1.4">Guide d'utilisation du portail organisation données</div>
+                    </div>
+                    <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#f3e8ff;color:#7c3aed">WIKI</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- PROJET -->
+        <div id="projet" style="margin-bottom:56px;scroll-margin-top:115px">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:24px;padding:14px 19px;background:#374151;border-radius:10px;color:#fff">
+                <div style="font-size:22px;line-height:1">📁</div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800">Projet</div>
+                    <div style="font-size:12px;opacity:0.8;margin-top:2px">Feuille de route et organisation du projet QDD</div>
+                </div>
+            </div>
+            <section style="margin-bottom:32px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:19px;padding-bottom:13px;border-bottom:1px solid #d1d5db">
+                    <div style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:#fef3e6;border:1px solid #fcd9b6">📊</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">Feuille de route QDD</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden;opacity:0.45">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#fce9e5;color:#C43E1C;border:1px solid #f0c4bb">P</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Vision Macro</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Vue d'ensemble macro de la feuille de route</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#f0f0f0;color:#9ca3af">OBSOLÈTE</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- APPLICATIONS -->
+        <div id="apps" style="margin-bottom:56px;scroll-margin-top:115px">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:24px;padding:14px 19px;background:#065f46;border-radius:10px;color:#fff">
+                <div style="font-size:22px;line-height:1">⚙️</div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800">Applications</div>
+                    <div style="font-size:12px;opacity:0.8;margin-top:2px">Outils de contrôle, revue de code et indicateurs</div>
+                </div>
+            </div>
+
+            <!-- SIMC -->
+            <section style="margin-bottom:32px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:19px;padding-bottom:13px;border-bottom:1px solid #d1d5db">
+                    <div style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:#d1fae5;border:1px solid #a7f3d0">🏭</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">Contrôler ses données — SIMC</div>
+                    <div style="margin-left:auto;font-size:12px;color:#6b7280">Réf. : A. Mazier · A. Mamecier · Y. Mourelon</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#d1fae5;color:#059669;border:1px solid #a7f3d0">⚙</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Rapport BD KPI UoC</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Tableau de bord des indicateurs clés de qualité</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#d1fae5;color:#059669">APP</span>
+                    </a>
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#d1fae5;color:#059669;border:1px solid #a7f3d0">🏭</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">SIMC (Usine à Contrôle)</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Accès à l'application de contrôle automatique</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#d1fae5;color:#059669">APP</span>
+                    </a>
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#fce9e5;color:#C43E1C;border:1px solid #f0c4bb">P</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Présentation Générale</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Synthèse des attendus ACM, blocs développés, interactions projets</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#fce9e5;color:#C43E1C">PPT</span>
+                    </a>
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#dbeafe;color:#1a56aa;border:1px solid #bfdbfe">W</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">SFD — Remplir la fonction F5</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Guide pour compléter la spécification fonctionnelle détaillée</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#dbeafe;color:#1a56aa">WORD</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- MAYA -->
+            <section style="margin-bottom:32px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:19px;padding-bottom:13px;border-bottom:1px solid #d1d5db">
+                    <div style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:#fee2e2;border:1px solid #fecaca">🔍</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">MAYA — Revue de code</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#d1fae5;color:#059669;border:1px solid #a7f3d0">🧑‍💻</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">MAYA — Utilitaire de revue de code</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Outil d'analyse et de revue automatisée du code</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#d1fae5;color:#059669">APP</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- DOCUMENTATION -->
+        <div id="docs" style="margin-bottom:56px;scroll-margin-top:115px">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:24px;padding:14px 19px;background:#5b21b6;border-radius:10px;color:#fff">
+                <div style="font-size:22px;line-height:1">📚</div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800">Documentation</div>
+                    <div style="font-size:12px;opacity:0.8;margin-top:2px">Modèles de données, dictionnaire META et lignage</div>
+                </div>
+            </div>
+
+            <!-- MPD -->
+            <section style="margin-bottom:32px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:19px;padding-bottom:13px;border-bottom:1px solid #d1d5db">
+                    <div style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:#ede9fe;border:1px solid #ddd6fe">📐</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">Documenter son modèle de données</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#f3e8ff;color:#7c3aed;border:1px solid #ddd6fe">W</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Créer son MPD depuis les tables</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Procédure de création du modèle physique de données</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#f3e8ff;color:#7c3aed">WIKI</span>
+                    </a>
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#fee2e2;color:#dc2626;border:1px solid #fecaca">▶</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Tutoriel vidéo — Projet PowerDesigner</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Prise en main et utilisation de PowerDesigner</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#fee2e2;color:#dc2626">VIDÉO</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- META -->
+            <section style="margin-bottom:32px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:19px;padding-bottom:13px;border-bottom:1px solid #d1d5db">
+                    <div style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:#fef3c7;border:1px solid #fde68a">🔖</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">META — Dictionnaire de données</div>
+                    <div style="margin-left:auto;font-size:12px;color:#6b7280">Réf. : A. Mazier · A. Mamecier · H. Charlot</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#f3e8ff;color:#7c3aed;border:1px solid #ddd6fe">W</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">MPD vers META</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Procédure d'alimentation du dictionnaire depuis le MPD</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#f3e8ff;color:#7c3aed">WIKI</span>
+                    </a>
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#f3e8ff;color:#7c3aed;border:1px solid #ddd6fe">W</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Utilisation du dictionnaire META</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Guide d'utilisation et de consultation du dictionnaire</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#f3e8ff;color:#7c3aed">WIKI</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- LIGNAGE -->
+            <section style="margin-bottom:32px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:19px;padding-bottom:13px;border-bottom:1px solid #d1d5db">
+                    <div style="width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:#dbeafe;border:1px solid #bfdbfe">🔗</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">Lignage de données</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <a href="#" style="background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;position:relative;overflow:hidden">
+                        <div style="width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;font-weight:700;font-family:'Syne',sans-serif;background:#f3e8ff;color:#7c3aed;border:1px solid #ddd6fe">W</div>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:14px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Lignage de données</div>
+                            <div style="font-size:12px;color:#6b7280;line-height:1.4">Documentation et traçabilité du cycle de vie des données</div>
+                        </div>
+                        <span style="position:absolute;top:11px;right:13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 6px;border-radius:4px;background:#f3e8ff;color:#7c3aed">WIKI</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer style="border-top:1px solid #d1d5db;padding:24px 32px;text-align:center;font-size:12px;color:#6b7280">
+        IBIQ · Équipe A340 · Portail Qualité des Données — Dernière mise à jour 29/08/2024
+    </footer>
+
+</body>
+</html>
